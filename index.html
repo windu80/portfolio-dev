@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Julien's Portfolio</title>
+  <meta name="description" content="A portfolio website to display my projects.">
+  <meta name="author" content="Julien Mourier">
+
+  <!-- These <meta> elements take advantage of something called the Open Graph protocol. -->
+  <!-- This will enhance the appearance of the web page when it’s linked in a social media post. -->
+  <!-- For example, the five meta elements included here will appear in social cards embedding the data. -->
+  <meta property="og:title" content="Julien's Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://example.com/">
+  <meta property="og:description" content="A portfolio website to display my projects.">
+  <meta property="og:image" content="image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Bootstrap 5.2 CSS Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- My Own CSS Stylesheet -->
+  <!-- If your site already has style.css?v=1.0, if you make some changes and change it to style.css?v=1.1, this will force the browser to re-download the file and overwrite the old one in the browser’s cache -->
+  <link rel="stylesheet" href="static/css/styles.css?v=1.03">
+</head>
+
+
+
+  <!-- "data-bs-spy", "data-bs-target" and "data-bs-offset" are so that the right navbar button highlights depending on the active section of the website I'm in -->
+  <!-- See the documentation about Scrollspy -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+  <!-- Loading Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!-- Loading Spinner End -->
+
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+   <a href="index.html" class="navbar-brand d-block d-lg-none">
+       <h1 class="text-primary fw-bold m-0">Julien</h1>
+   </a>
+   <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+     <div class="navbar-nav ms-auto py-0">
+       <a href="#home" class="nav-item nav-link active">Home</a>
+       <a href="#about" class="nav-item nav-link">About</a>
+         <div class="dropdown">
+           <a href="#portfolio" class="nav-item nav-link"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="wasp.html#header">WAsP</a></li>
+              <li><a class="dropdown-item" href="#">GIS</a></li>
+              <li><a class="dropdown-item" href="#">PVsyst</a></li>
+              <li><a class="dropdown-item" href="#">Python</a></li>
+            </ul>
+         </div>
+     </div>
+     <a href="mailto:julien.joseph.mourier@gmail.com?subject=Interest in your profile&body=Dear Mr. Mourier, we are interested in your profile and would like to invite you to an interview."
+        class="btn btn-outline-primary py-1 px-3 mx-3 my-2 d-none d-lg-block fw-bold big-button">Hire Me</a>
+     <div class="navbar-nav me-auto py-0">
+         <a href="#experience" class="nav-item nav-link">Experience</a>
+         <a href="#education" class="nav-item nav-link">Education</a>
+         <a href="#contact" class="nav-item nav-link">Contact</a>
+     </div>
+   </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Home Main Banner - Start -->
+  <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+          <h3 class="text-primary mb-3">I'm</h3>
+          <h1 class="display-3 mb-3">Julien Mourier</h1>
+          <h2 class="typed-text-output d-inline"></h2>
+          <div class="typed-text d-none">GIS Analyst, PV Designer, Electrical Engineer, Wind Resource Analyst, Project Development Engineer, Renewable Energy Consultant </div>
+          <div class="d-flex align-items-center pt-5">
+            <a href="static/assets/cv/JulienMourierCV(oct2022)english-2.pdf" download="JulienMourierCV.pdf" target="_blank" type="application/octet-stream" rel="noopener"
+              class="btn btn-primary py-3 px-4 me-5 col-auto col-sm-4 col-md-3 col-lg-5 col-xl-4 col-xxl-3">Download CV</a>
+            <a href="mailto:julien.joseph.mourier@gmail.com?subject=Interest in your profile&body=Dear Mr. Mourier, we are interested in your profile and would like to invite you to an interview."
+            class="btn btn-outline-primary py-3 px-4 col-auto col-sm-4 col-md-3 col-lg-5 col-xl-4 col-xxl-3">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="img-fluid" src="static/assets/images/website_portrait_yellow.png" alt="Professional portrait photo">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Home Main Banner - End -->
+
+
+  <!-- About Start -->
+  <div class="container-xxl pb-5 pb-lg-6" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="img-fluid rounded mx-auto d-block about-portrait" src="static/assets/images/about-2.jpg" alt="portrait on top of wind turbine">
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="d-flex align-items-center mb-5">
+              <div class="years flex-shrink-0 text-center me-4">
+                  <h1 class="display-1 mb-0">7</h1>
+                  <h5 class="mb-0">Years</h5>
+              </div>
+              <h3 class="lh-base mb-0">of working experience in the renewable energy business</h3>
+          </div>
+          <p class="mb-4">Following a career break for health-related reasons, I am excited to be back on the job market for a part-time position only.
+            During that time, I learned new skills which, I believe, will make me a real asset in any project development team, or will bring value to any consultancy service.
+            <!-- I studied Geographical Information Systems - constraint analysis - overlay analysis - raster weighted overlay -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+
+  <!-- Portfolio Start -->
+  <div class="container-fluid bg-light py-6" id="portfolio">
+    <div class="container">
+      <header class="row mb-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+        <div class="text-center">
+            <h1 class="display-5 mb-0 portfolio-title">Featured <strong>Portfolio</strong></h1>
+        </div>
+      </header>
+      <div class="row g-4">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="d-flex flex-column flex-sm-row align-items-center bg-white rounded h-100 p-4 p-xl-5 shadow portfolio-item portfolio-wasp">
+              <img class="portfolio-logo" src="static/assets/icons/wasp_transparent.png" alt="logo WAsP software">
+              <div class="ms-sm-4 portfolio-text">
+                <h4 class="mb-3">WAsP - Wind Resource Assessment software<span class="btn btn-primary btn-sm mx-2 my-1">Overview</span></h4>
+                <p class="m-0">Being one of the main components of WindPRO, the <span class="fst-italic">WAsP software is the industry standard for wind resource assessment, siting and energy yield calculation for wind turbines and wind farms.</span> Created by the Technical University of Denmark (DTU), it is also the basis for the Global Wind Atlas.</p>
+              </div>
+              <a href="wasp.html#header">
+                <div class="portfolio-info lh-sm p-3 p-xl-4">
+                  <h4>Portfolio WAsP</h4>
+                  <p>I realized a few Case Analyses, studying the wind resource in different areas, and working out the Predicted Wind Climate, taking the terrain (roughness and elevation) into account.</p>
+                  <br><div class="btn btn-primary">Explore</div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="d-flex flex-column flex-sm-row align-items-center bg-white rounded h-100 p-4 p-xl-5 shadow portfolio-item portfolio-GIS">
+                <img class="portfolio-logo" src="static/assets/icons/ArcGIS_logo.png" alt="logo ArcGIS software">
+                <div class="ms-sm-4 portfolio-text">
+                  <h4 class="mb-3">Geographic Information System (GIS)<span class="btn btn-primary btn-sm mx-2 my-1">Overview</span></h4>
+                  <p>Being adept in GIS means knowing the concepts, tools, and techniques to make maps that answer geographic questions, i.e. knowing how to create GIS data, how to find and evaluate data found online, how to design an effective map, and how to filter data and analyze spatial relationships, and how to work with satellite imagery.</p>
+                  <p class="m-0">For instance, we can analyze maps of wind or solar resource and by constraint analysis, with factors such as distance from transmission lines or proximity from agglomerations, we can determine the best areas suitable for a new Wind or Solar Farm.</p>
+                </div>
+                <a href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d" target="_blank" rel="noopener">
+                  <div class="portfolio-info lh-sm p-3 p-xl-4">
+                    <h4>Portfolio GIS</h4>
+                    <p>Here I created a "Story Maps" page displaying all the maps I created with ArcGIS/ArcMap.</p>
+                    <br><div class="btn btn-primary">Explore</div>
+                  </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="d-flex flex-column flex-sm-row align-items-center bg-white rounded h-100 p-4 p-xl-5 shadow portfolio-item portfolio-pvsyst">
+              <img class="portfolio-logo" src="static/assets/icons/pvsyst-logo-mini.png" alt="logo ArcGIS software">
+              <div class="ms-sm-4 portfolio-text">
+                <h4 class="mb-3">PVsyst<span class="btn btn-primary btn-sm mx-2 my-1">Overview</span></h4>
+                <p class="m-0">PVsyst is a software used for the study, sizing, simulation and data analysis of complete PV systems.</p>
+              </div>
+              <a href="#">
+                <div class="portfolio-info lh-sm p-3 p-xl-4">
+                  <h4>Portfolio PVsyst</h4>
+                  <p>I created Case Studies of different PV systems, such as rooftop, utility-scale, sheds or trackers, bifacial, with storage, off-grid, etc.</p>
+                  <br><div class="btn btn-primary">Explore</div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="d-flex flex-column flex-sm-row align-items-center bg-white rounded h-100 p-4 p-xl-5 shadow portfolio-item portfolio-python">
+              <img class="portfolio-logo" src="static/assets/icons/py.png" alt="logo Python programming language">
+              <div class="ms-sm-4 portfolio-text">
+                <h4 class="mb-3">Python<span class="btn btn-primary btn-sm mx-2 my-1">Overview</span></h4>
+                <p>Through learning Python, one can know to build websites, apps, how to do web-scraping and data science, and how to use frameworks like Selenium, Beautiful Soup, Request, Flask, Pandas, NumPy, Scikit Learn, Plotly, Matplotlib, Seaborn.</p>
+                <p class="m-0">This programming language proves really efficient in a working environment, to create scripts performing tasks that would otherwise be impossible.</p>
+              </div>
+              <a href="#">
+                <div class="portfolio-info lh-sm p-3 p-xl-4">
+                  <h4>Portfolio Python</h4>
+                  <p>Displaying here some of the programs I created, either through screenshots or videos, or interactive links to try the programs yourself.</p>
+                  <br><div class="btn btn-primary">Explore</div>
+                </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Experience Start -->
+  <div class="container-fluid pt-6 pb-5 experience" id="experience">
+    <div class="container">
+      <header class="row align-items-center justify-content-center text-center mb-5 gy-3 wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="col-12 col-md-auto display-5 px-5">Working Experience</h1>
+        <a class="col-auto btn btn-primary btn-lg" href="#">Download CV</a>
+      </header>
+      <div class="timeline">
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-1"/>
+          <label for="show-experience-1">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">2/2020 - 10/2022</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Battling Disease... and Learning New Skills</h2>
+              <h4>Sydney, NSW, Australia</h4>
+              <ul class="lh-sm">
+                <li>Autoimmune illness: going through treatment, gradually implementing completely new lifestyle and diet, researching the literature on the subject extensively, etc</li>
+                <li>Using the free time to exercise, and trying out and accomplishing new things</li>
+                <ul>
+                  <li>Progressively running from 2km to 5, 10 and the Ultra Trail Australia 22km</li>
+                  <li>Learning how to: swim freestyle, sail a boat, scuba-dive, surf, skateboard, ...</li>
+                  <li>Passing my Boat Driving Licence</li>
+                </ul>
+                <li>Learning new technical skills online: see Portfolio above</li>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-2"/>
+          <label for="show-experience-2">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">7/2019 - 1/2020</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Site Manager/Plant Performance Manager</h2>
+              <h4>RES Australia – Sydney, NSW, Australia</h4>
+              <ul class="lh-sm">
+                <li>During Construction Phase:</li>
+                <ul>
+                  <li>Assisting Construction Project Manager to deliver both EPC and Grid contract</li>
+                  <li>Overseeing plant walk-downs post construction to develop contractor punch-lists and oversee punch-list close out</li>
+                  <li>Ensuring the integration of each new WTG in the different SCADA systems</li>
+                </ul>
+                <li>During Operations Phase:</li>
+                <ul>
+                  <li>Supervising site-based activities and lead on-site contractors</li>
+                  <li>Overseeing the work of contractors, meeting on a regular basis to discuss the ongoing performance and availability of the generation systems</li>
+                  <li>Troubleshooting telecommunication and dispatch systems issues</li>
+                  <li>Cooperating with global RES teams in order to draw on centralised expertise</li>
+                </ul>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-3"/>
+          <label for="show-experience-3">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">2/2018 - 7/2018</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Project Engineer</h2>
+              <h4>Catcon – Bungala Solar Farm, 220MW – Port Augusta, SA, Australia</h4>
+              <ul class="lh-sm">
+                <li>Coordination of the installation of 420.000 PV modules on tracker systems</li>
+                <li>PV panel installation quality control & remediation of defects</li>
+                <li>Day-to-day management of construction site issues</li>
+                <ul>
+                  <li>Staff and machinery (400+ labourers, 50+ heavy machineries)</li>
+                  <li>Trenches for high-voltage cables and for DC cables</li>
+                  <li>Civil works around power stations and weather stations</li>
+                  <li>Delivery of materials from lay-down to building area and waste management</li>
+                </ul>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-4"/>
+          <label for="show-experience-4">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">5/2017 - 12/2017</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Project Manager</h2>
+              <h4>InnoVent – Lille, France</h4>
+              <ul class="lh-sm">
+                <li>Support in the construction of two 38 MW wind farms (12 WTG Siemens 3.2MW)</li>
+                <ul>
+                  <li>Monitoring the civil works (earthwork, excavation, foundation concrete pouring) and the turbine erection works</li>
+                </ul>
+                <li>Project preparation of a 36MW wind farm in Morocco (12 second hand turbines)</li>
+                <ul>
+                  <li>Organization of sea transport (blade frame supports, lashing/securing of towers on ship, crane lifting, maritime company selection, customs), involving frequent travels to the components storage port in Finland</li>
+                  <li>Identification, quotation and supply of all transport and lifting tools</li>
+                  <li>Preparation of the overhaul/reconditioning work of the old nacelles</li>
+                  <li>Maintenance activities – hands-on training with technicians</li>
+                </ul>
+                <li>Leading a lifting operation of generator exchange (30T generator, 25T rotor)</li>
+                <li>Installation of a 41kWp solar system on own office facilities</li>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-5"/>
+          <label for="show-experience-5">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">2/2015 - 12/2016</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Operation and Maintenance Site Manager (Technical Coordinator)</h2>
+              <h4>Vergnet – Ashegoda Wind Farm Project, 120MW – Mekelle, Ethiopia</h4>
+              <ul class="lh-sm">
+                <li>Coordination of all Operation & Maintenance technical aspects of the Ashegoda Wind Farm for client Ethiopian Electric Power (EEP)</li>
+                <li>Staff management of 10 Vergnet technicians for Phase1 (30MW)</li>
+                <ul>
+                  <li>Planning and assignment for preventive and corrective maintenance</li>
+                  <li>Organization of trainings (electrical, mechanical, safety, working at height)</li>
+                </ul>
+                <li>Management of subcontractor Alstom/General Electric for Phase 2/3 (90MW)</li>
+                <ul>
+                  <li>Follow-up and check of their maintenance operations</li>
+                  <li>Ensure fulfilment of contractual obligations</li>
+                  <li>Cooperation work on topics affecting the whole Wind Farm</li>
+                </ul>
+                <li>Weekly/Monthly/Yearly reporting to Ethiopian Electric Power (EEP)</li>
+                <li>Clearance of Punch List and Final Taking Over obtained</li>
+                <li>On-site involvement in various topics (SCADA system, troubleshooting, HV cells operating, overhead lines repair, grid stabilization, PLC, incidents solving)</li>
+                <li>Logistics, supply spare parts, purchase, coordination with French headquarters</li>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-6"/>
+          <label for="show-experience-6">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">4/2013 - 2/2015</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Control Room and SCADA Engineer</h2>
+              <ul class="lh-sm">
+                <li>Development and operation of a control room for the monitoring of 540 MW wind power (286 turbines) and 330 MWp photovoltaic (74 plants) Europe-wide 24/7</li>
+                <ul>
+                  <li>Daily multilingual communication with technicians from Germany, France, Italy, UK and recording of their on-site carried out activities</li>
+                  <li>Reporting of faults and outage, communication with other wind centers</li>
+                  <li>Configure software and manage SCADA alarms</li>
+                  <li>Analysis of data in order to diagnose and resolve issue</li>
+                </ul>
+              </ul>
+              <h2 class="mt-2">Asset Manager</h2>
+              <h4>BayWa r.e. Operation Services GmbH – Munich, Germany</h4>
+              <ul class="lh-sm">
+                <li>Management of solar plants for the clients</li>
+                <ul>
+                  <li>Planning of the maintenances, delivering of analytical and performance reports, initiation of repairs and retrofits</li>
+                  <li>Management of technicians and maintenance contractors, as well as telecommunication, grid or insurance companies on behalf of the client</li>
+                  <li>Implementation of technical improvement (data-logger lightning protection)</li>
+                </ul>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-7"/>
+          <label for="show-experience-7">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">2/2012 - 2/2013</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Project Developer</h2>
+              <ul class="lh-sm">
+                <li>Logistics manager for the components delivery of a portfolio of 29 * 100 kWp solar roof systems on agricultural hangars (11.600 PV modules, 174 inverters)</li>
+                <li>Project development of solar systems</li>
+                <ul>
+                  <li>Creation of layout plans, electric plans, yield prognosis and cost analyses</li>
+                  <li>Development of a tool for the calculation of CO2 emissions and its return time</li>
+                </ul>
+              </ul>
+              <h2 class="mt-2">Construction Assistant</h2>
+              <h4>BELECTRIC – Béziers, France</h4>
+              <ul class="lh-sm">
+                <li>Support in the construction planning and construction supervision of utility-scale solar power plants (56 MWp, 12 MWp)</li>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <input type="checkbox" id="show-experience-8"/>
+          <label for="show-experience-8">
+            <div class="timeline-text">
+              <div class="d-flex justify-content-between timeline-flex-date">
+                <div class="timeline-date">9/2010 - 1/2011</div>
+                <div class="btn btn-outline-primary btn-sm experience-btn">More details</div>
+              </div>
+              <h2>Intern</h2>
+              <h4>INP North America – Atlanta, USA</h4>
+              <ul class="lh-sm">
+                <li>Support of the power plant department</li>
+                <ul>
+                  <li>Reading through the control program of a gas power plant as statement list language (STL), comparison with the circuit diagrams and update of these plans (in view of a changeover from Siemens to Emerson control system)</li>
+                  <li>Site visit of the Combined Cycle Gas Turbine (CCGT) plant for implementation</li>
+                </ul>
+                <li>Development of a tracking and guidance system for tanker trucks</li>
+                <ul>
+                  <li>Image acquisition of an infrared camera</li>
+                  <li>Writing of a C ++ program that retrieves the data from the camera, analyzes them and recognizes the hatch of the truck in all conditions</li>
+                  <li>Writing of a program using STEP 7 software for the command of guiding lights for the truck through a programmable logic controller (PLC) Siemens S7</li>
+                  <li>Development of a human-machine interface (HMI) using WinCC flexible</li>
+                </ul>
+              </ul>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Experience End -->
+
+
+  <!-- Education Start -->
+  <div class="container-fluid pt-6 pb-5 experience bg-light" id="education">
+    <div class="container">
+      <header class="row align-items-center justify-content-center text-center mb-5 gy-3 wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="col-12 col-md-auto display-5 px-5">Education</h1>
+        <a class="col-auto btn btn-primary btn-lg" href="#">Download CV</a>
+      </header>
+      <div class="timeline">
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2009 - 2012</div>
+            <h2>University of Technology of Belfort-Montbéliard (UTBM)</h2>
+            <h4>Belfort, France</h4>
+            <p>Degree: Master’s Degree</p>
+            <p>Major: Electrical Engineering</p>
+            <p>Minor: Corporate management (contract law, accounting, asset management)</p>
+          </div>
+        </div>
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2006 - 2009</div>
+            <h2>National Institute of Applied Sciences (INSA)</h2>
+            <h4>Rennes, France</h4>
+            <p>Degree: Bachelor</p>
+            <p>Major: Mathematics, Physics, Telecommunications</p>
+          </div>
+        </div>
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2003 - 2006</div>
+            <h2>High school Saint-Riquier </h2>
+            <h4>Amiens, France</h4>
+            <p>Degree: High school diploma</p>
+            <p>Major: Scientific branch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Education End -->
+
+
+
+  <!-- Contact Start -->
+  <div class="container-fluid pt-6 pb-4 contact-section" id="contact">
+    <div class="container">
+      <header class="row mb-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+        <div class="text-center">
+            <h1 class="display-5 mb-0">Contact Me</h1>
+        </div>
+      </header>
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex wow fadeInUp" data-wow-delay="0.1s">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-signs-post"></i>
+            </div>
+            <h3 class="mb-4">Address</h3>
+            <p>59 Addison Road Manly NSW 2095</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex wow fadeInUp" data-wow-delay="0.1s">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p><a href="tel:+61491062860">+ 491 062 860</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex wow fadeInUp" data-wow-delay="0.1s">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <h3 class="mb-4">Email Address</h3>
+            <p><a href="mailto:julienjmourier@gmail.com">julienjmourier@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex wow fadeInUp" data-wow-delay="0.1s">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="mb-4">LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/julien-mourier-4a903944/" target="_blank" rel="noopener">linkedin.com/in/julien-mourier-4a903944/</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+
+  <!-- Copyright Start -->
+  <div class="container-fluid bg-dark text-white py-4 copyright-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                <br>Designed By Julien Mourier
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Inspired By <a class="text-primary" href="https://themewagon.com/themes/free-bootstrap-5-html5-css3-portfolio-website-template-proman/" target="_blank" rel="noopener">ProMan</a>
+                , <a class="text-primary" href="https://themewagon.com/themes/free-bootstrap-4-html5-portfolio-website-template-devfolio-2/" target="_blank" rel="noopener">DevFolio </a>
+                and <a class="text-primary" href="https://themewagon.com/themes/free-one-page-bootstrap-4-html5-personal-portfolio-website-template-clark/" target="_blank" rel="noopener">Clark</a>
+                <br>Designs By <a class="text-secondary" href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a>
+                , <a class="text-secondary" href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
+                <br>Distributed By <a class="text-secondary" href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- JavaScript Libraries -->
+  <!-- Bootstrap 5.2 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Latest JQuery Library -->
+  <!-- jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Library dealing with the job titles typing -->
+  <script src="static/lib/typed/typed.min.js"></script>
+  <!-- Wow library, to make elements appear with fadeInUp animation as we scroll -->
+  <script src="static/lib/wow/wow.min.js"></script>
+  <!-- More libraries, keeping them to not break any functionality -->
+  <script src="static/lib/easing/easing.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
+  <!-- <script src="static/lib/counterup/counterup.min.js"></script> -->
+  <!-- <script src="static/lib/owlcarousel/owl.carousel.min.js"></script> -->
+  <!-- <script src="static/lib/isotope/isotope.pkgd.min.js"></script> -->
+  <!-- <script src="static/lib/lightbox/js/lightbox.min.js"></script> -->
+
+  <!-- ProMan template Javascript -->
+  <script src="static/js/main.js"></script>
+
+</body>
+</html>
