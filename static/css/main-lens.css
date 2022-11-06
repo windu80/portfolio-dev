@@ -1041,7 +1041,8 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				.thumbnails article .thumbnail:before {
+				/* .thumbnails article .thumbnail:before { */
+				.thumbnails article:before {
 					pointer-events: none;
 					-moz-transition: opacity 0.25s ease;
 					-webkit-transition: opacity 0.25s ease;
@@ -1058,7 +1059,8 @@ input, select, textarea {
 					z-index: 1;
 				}
 
-				.thumbnails article .thumbnail:focus:before {
+				/* .thumbnails article .thumbnail:focus:before { */
+				.thumbnails article:focus:before {
 					opacity: 0.5;
 				}
 
@@ -1066,7 +1068,8 @@ input, select, textarea {
 				display: none;
 			}
 
-			.thumbnails article.active .thumbnail:before {
+			/* .thumbnails article.active .thumbnail:before { */
+			.thumbnails article.active:before {
 				opacity: 1;
 			}
 
@@ -1445,4 +1448,13 @@ input, select, textarea {
 
 .caption a {
   text-decoration: underline;
+}
+
+.thumbnails article {
+	height: 80px;
+	overflow: hidden;
+}
+
+.thumbnails article .thumbnail img {
+	object-fit: cover;
 }

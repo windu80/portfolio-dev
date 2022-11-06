@@ -68,7 +68,7 @@
            <a href="#portfolio" class="nav-item nav-link"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="wasp.html#header">WAsP</a></li>
-              <li><a class="dropdown-item" href="#">GIS</a></li>
+              <li><a class="dropdown-item" href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d" target="_blank" rel="noopener">GIS</a></li>
               <li><a class="dropdown-item" href="#">PVsyst</a></li>
               <li><a class="dropdown-item" href="#">Python</a></li>
             </ul>
@@ -371,9 +371,9 @@
 			</section>
 
       <!-- Coonooer header -->
-      <header class="section-header">
+      <header id="coonooer" class="section-header">
         <h2>Case 3: Coonooer Bridge</h2>
-        <p>Coonooer Bridge is a tiny wind farm with outstanding outcome, which was only able to be found ("a needle in a haystack") with advanced wind modeling.
+        <p>Coonooer Bridge is a tiny wind farm with outstanding outcome, which could only be found ("a needle in a haystack") with advanced wind modeling.
         Here we try to get a resolution as good as in the original project.</p>
       </header>
 
@@ -466,11 +466,217 @@
         </article>
       </section>
 
+      <!-- Brisbane header -->
+      <header id="brisbane" class="section-header">
+        <h2>Case 4: Brisbane</h2>
+        <p>Study of a potential wind farm near the Brisbane area.</p>
+      </header>
+
+      <!-- Thumbnail Brisbane -->
+      <section id="thumbnails-3" class="thumbnails">
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/001.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/001.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 1/8</h2>
+          <p>Based on our previous <a href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d#ref-n-EHPbEz" target="_blank" rel="noopener">GIS study in the Brisbane area</a>,
+          we pick a site which has some potential, north of Toowoomba, and we extract the Generalised Wind Climate (GWC) of the area.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/002.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/002.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 2/8</h2>
+          <p>As done in the previous studies, we import the elevation and roughness data, as well as the GWC file.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/003.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/003.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 3/8</h2>
+          <p>We generate a first resource grid, to estimate the wind speed at every points.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/004.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/004.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 4/8</h2>
+          <p>From the first grid, we select a smaller area and generate a higher resolution resource grid. We also show the elevation.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/005.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/005.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 5/8</h2>
+          <p>We position 25 turbines (Vesta V100, 2.6MW) at good wind speed locations while trying to minimize the wake effects. After simulation, the Wind Farm generates 249 GWh/year, with only 3% wake loss, and a capacity factor of 45%.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/006.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/006.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 6/8</h2>
+          <p>Detailed results for all turbines.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/007.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/007.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 7/8</h2>
+          <p>Display of the energy production in all wind directions for each turbine, and the associated wake loss in red.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/brisbane/008.jpg"><img src="static/assets/images/wasp-thumbs/brisbane/008.jpg" alt="" /></a>
+          <h2>Case 4: Brisbane - Step 8/8</h2>
+          <p>3D overview of the potential wind farm and the resource grid.</p>
+        </article>
+      </section>
+
+      <!-- Rockhampton header -->
+      <header id="rockhampton" class="section-header">
+        <h2>Case 5: Rockhampton</h2>
+        <p>Study of a potential wind farm in the Rockhampton area.</p>
+      </header>
+
+      <!-- Thumbnail Rockhampton -->
+      <section id="thumbnails-4" class="thumbnails">
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/001.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/001.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 1/7</h2>
+          <p>Based on our previous <a href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d#ref-n-EHPbEz" target="_blank" rel="noopener">GIS study in the Rockhampton area</a>,
+          we locate the area of interest, south of Rockhampton, while staying away from the Gelobera State Forest.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/002.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/002.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 2/7</h2>
+          <p>As usual, we extract the Generalised Wind Climate (GWC) from the Gobal Wind Atlas, and we also import elevation and terrain roughness data.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/003.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/003.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 3/7</h2>
+          <p>Simulation of medium resolution wind speed resource grid, for our large area of interest.
+            We select a smaller area in the center which is fairly unaccidented, so we have a plateau to build our wind turbines.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/004.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/004.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 4/7</h2>
+          <p>We position 32 wind turbines in a layout which gives them enough spacing. After simulation, we have an Annual Energy Production (AEP) of 253 GWh, with 38% capacity factor, and 9.7% wake loss.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/005.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/005.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 5/7</h2>
+          <p>Simulation results for all turbines.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/006.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/006.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 6/7</h2>
+          <p>When studying the wake effects (in red), we see that we could certainly improve the layout, as our turbines are aligned in the same direction as the predominant wind, which causes major wake losses.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/rockhampton/007.jpg"><img src="static/assets/images/wasp-thumbs/rockhampton/007.jpg" alt="" /></a>
+          <h2>Case 5: Rockhampton - Step 7/7</h2>
+          <p>3D view of the resource grid and our potential wind farm</p>
+        </article>
+      </section>
+
+      <!-- CFD header -->
+      <header id="cfd" class="section-header">
+        <h2>Case 6: Comparison of linear vs. CFD model</h2>
+        <p>When the terrain is very steep and the wind enters turbulent flow, the linear model becomes less precise. For a fee, WAsP allows us to simulate with a Computational Fluid Dynamics (CFD) model.</p>
+      </header>
+
+      <!-- Thumbnail CFD -->
+      <section id="thumbnails-5" class="thumbnails">
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/001.jpg"><img src="static/assets/images/wasp-thumbs/cfd/001.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 1/9</h2>
+          <p>A met mast has collected wind data for this project. Around it, we can see that the elevation goes quickly from 180 to 700m.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/002.jpg"><img src="static/assets/images/wasp-thumbs/cfd/002.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 2/9</h2>
+          <p>Similarly, there is a rapid change of elevation around the future wind turbines.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/003.jpg"><img src="static/assets/images/wasp-thumbs/cfd/003.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 3/9</h2>
+          <p>The RIX (ruggedness index) definitely indicates a steep terrain around the met mast.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/004.jpg"><img src="static/assets/images/wasp-thumbs/cfd/004.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 4/9</h2>
+          <p>The RIX (ruggedness index) also indicates a steep terrain around the turbines.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/005.jpg"><img src="static/assets/images/wasp-thumbs/cfd/005.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 5/9</h2>
+          <p>After simulation, we see a clear distinction between the IBZ (linear) model and the CFD model regarding the wind speed.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/006.jpg"><img src="static/assets/images/wasp-thumbs/cfd/006.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 6/9</h2>
+          <p>We also see quite a difference regarding the wind power density between the two models.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/007.jpg"><img src="static/assets/images/wasp-thumbs/cfd/007.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 7/9</h2>
+          <p>From the measured/observed wind data of the met mast, the effects of the terrain is removed to create a Generalised Wind Climate.
+          Because the wind behaves differently in a complex terrain, we get different results if we use the IBZ or the CFD model.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/008.jpg"><img src="static/assets/images/wasp-thumbs/cfd/008.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 8/9</h2>
+          <p>Using the generated GWC, the model will then take the effects of the terrain around the turbines into account to predict the wind.
+          The two models simulate the effects of terrain differently (laminar flow vs turbulent flow) and so the results are different.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/cfd/009.jpg"><img src="static/assets/images/wasp-thumbs/cfd/009.jpg" alt="" /></a>
+          <h2>Case 6: Comparison of linear vs. CFD model - Step 9/9</h2>
+          <p>Similarly, the potential wind energy calculated is also quite different between the two models.</p>
+        </article>
+      </section>
+
+      <header id="weng" class="section-header">
+        <h2>Case 7: WAsP Engineering (WEng)</h2>
+      </header>
+
+      <div class="youtube-container">
+        <div class="video-text">
+          <p>WAsP Engineering is the industry-standard software for calculation of wind conditions, which are relevant for fatigue loads and extreme loads</p>
+          <p>It is typically used for calculation of wind conditions for IEC site assessment.</p>
+          <p>In this video, I demonstrate how to create the Observed Extreme Wind Climate (EWC), generate the Generalised EWC and simulate the Predicted EWC, as well as some other features.</p>
+        </div>
+        <div class="h_iframe">
+          <iframe src="https://www.youtube.com/embed/gw6eMyAMEwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Corine header -->
+      <header id="corine" class="section-header">
+        <h2>Case 8: Corine Land Cover (CLC) database for terrain roughness data</h2>
+        <p>When importing our terrain data, we can choose from several database.</p>
+      </header>
+
+      <!-- Thumbnail Corine -->
+      <section id="thumbnails-6" class="thumbnails">
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/corine/001.jpg"><img src="static/assets/images/wasp-thumbs/corine/001.jpg" alt="" /></a>
+          <h2>Case 8: Corine database - Step 1/5</h2>
+          <p>In North of France, example of how well the terrain matches with the imported land cover (forest, fields, water, etc).</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/corine/002.jpg"><img src="static/assets/images/wasp-thumbs/corine/002.jpg" alt="" /></a>
+          <h2>Case 8: Corine database - Step 2/5</h2>
+          <p>Near Sprogø Island, the imported land cover from the CLC database here also matches well with the satellite view.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/corine/003.jpg"><img src="static/assets/images/wasp-thumbs/corine/003.jpg" alt="" /></a>
+          <h2>Case 8: Corine database - Step 3/5</h2>
+          <p>In this example, instead of importing from within WAsP, the data was directly downloaded from Corine Land Cover website, then opened and reworked in a GIS software,
+          before exporting again in the WAsP project. The GIS tool allows us to keep the polygon shapes, thus the result is much smoother and less granular.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/corine/004.jpg"><img src="static/assets/images/wasp-thumbs/corine/004.jpg" alt="" /></a>
+          <h2>Case 8: Corine database - Step 4/5</h2>
+          <p>Same result without the satellite view.</p>
+        </article>
+        <article>
+          <a class="thumbnail" href="static/assets/images/wasp-fulls/corine/005.jpg"><img src="static/assets/images/wasp-thumbs/corine/005.jpg" alt="" /></a>
+          <h2>Case 8: Corine database - Step 5/5</h2>
+          <p>Example of well-defined roughness classes with CLC data imported through GIS, for Langeland (Denmark).</p>
+        </article>
+      </section>
+
 
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+					<li>Copyright &copy;<script>document.write(new Date().getFullYear());</script>, Julien Mourier.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
 				</ul>
 			</footer>
 
