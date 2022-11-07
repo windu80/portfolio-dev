@@ -946,7 +946,7 @@ input, select, textarea {
 				transition: opacity 0.5s ease, visibility 0.5s;
 				width: 100%;
 				background: #fff;
-				text-align: center;
+				/* text-align: center; */
 			}
 
 				body.is-preload-1 #main {
@@ -1435,9 +1435,18 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 480px) {
-	#header {padding-left: 2.25em;}
-	.section-header {padding-right: 1em;}
-	.youtube-container p {margin-left: 0;}
+	#header {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.section-header {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.youtube-container p {
+		margin-left: .25em;
+		margin-right: .25em;
+	}
 }
 
 .caption {
