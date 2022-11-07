@@ -14,9 +14,9 @@
   <!-- For example, the five meta elements included here will appear in social cards embedding the data. -->
   <meta property="og:title" content="Julien's Portfolio">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://example.com/">
+  <meta property="og:url" content="https://julienmourier.github.io/portfolio/#home">
   <meta property="og:description" content="A portfolio website to display my projects.">
-  <meta property="og:image" content="image.png">
+  <meta property="og:image" content="card.png">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -54,7 +54,7 @@
 
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-0">
-   <a href="index.html" class="navbar-brand d-block d-lg-none">
+   <a href="index.html#home" class="navbar-brand d-block d-lg-none">
        <h1 class="text-primary fw-bold m-0">Julien</h1>
    </a>
    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -62,10 +62,10 @@
    </button>
    <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
      <div class="navbar-nav ms-auto py-0">
-       <a href="#home" class="nav-item nav-link">Home</a>
-       <a href="#about" class="nav-item nav-link">About</a>
+       <a href="index.html#home" class="nav-item nav-link">Home</a>
+       <a href="index.html#about" class="nav-item nav-link">About</a>
          <div class="dropdown">
-           <a href="#portfolio" class="nav-item nav-link"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
+           <a class="nav-item nav-link"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="wasp.html#header">WAsP</a></li>
               <li><a class="dropdown-item" href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d" target="_blank" rel="noopener">GIS</a></li>
@@ -77,9 +77,9 @@
      <a href="mailto:julien.joseph.mourier@gmail.com?subject=Interest in your profile&body=Dear Mr. Mourier, we are interested in your profile and would like to invite you to an interview."
         class="btn btn-outline-primary py-1 px-3 mx-3 my-2 d-none d-lg-block fw-bold big-button">Hire Me</a>
      <div class="navbar-nav me-auto py-0">
-         <a href="#experience" class="nav-item nav-link">Experience</a>
-         <a href="#education" class="nav-item nav-link">Education</a>
-         <a href="#contact" class="nav-item nav-link">Contact</a>
+         <a href="index.html#experience" class="nav-item nav-link">Experience</a>
+         <a href="index.html#education" class="nav-item nav-link">Education</a>
+         <a href="index.html#contact" class="nav-item nav-link">Contact</a>
      </div>
    </div>
   </nav>
@@ -101,10 +101,18 @@
         <div class="video-text">
           <p>Importing 5 years of wind data time-series into the WAsP Climate Analyst, to create an Observed Wind Climate (OWC).</p>
         </div>
-        <div class="h_iframe">
-          <iframe src="https://www.youtube.com/embed/xO203XYfCk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style="height: 0px; overflow: hidden; padding-top: 40%; position: relative; width: 100%;">
+          <iframe
+             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+             src="https://tube.rvere.com/embed?v=xO203XYfCk0"
+             title="YouTube video player"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+          </iframe>
         </div>
       </div>
+
       <div class="youtube-container">
         <div class="video-text">
           <p>In the next video, we import in WAsP the OWC, and vector maps of the elevation and roughness.</p>
@@ -112,8 +120,15 @@
           <p>Then, based on the GWC and the topography, we can estimate a Predicted Wind Climate (PWC) for any future wind turbine location.</p>
           <p>Finally, based on the power curve of our wind turbine model, we estimate the Annual Energy Production (AEP).</p>
         </div>
-        <div class="h_iframe">
-          <iframe src="https://www.youtube.com/embed/qUEPLG4ZNoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style="height: 0px; overflow: hidden; padding-top: 40%; position: relative; width: 100%;">
+          <iframe
+             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+             src="https://tube.rvere.com/embed?v=qUEPLG4ZNoU"
+             title="YouTube video player"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+          </iframe>
         </div>
       </div>
 
@@ -625,16 +640,35 @@
         <h2>Case 7: WAsP Engineering (WEng)</h2>
       </header>
 
+<!--       <div class="youtube-container">
+  <div class="video-text">
+    <p>WAsP Engineering is the industry-standard software for calculation of wind conditions, which are relevant for fatigue loads and extreme loads</p>
+    <p>It is typically used for calculation of wind conditions for IEC site assessment.</p>
+    <p>In this video, I demonstrate how to create the Observed Extreme Wind Climate (EWC), generate the Generalised EWC and simulate the Predicted EWC, as well as some other features.</p>
+  </div>
+  <div class="h_iframe">
+    <iframe src="https://www.youtube.com/embed/gw6eMyAMEwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div> -->
+
       <div class="youtube-container">
         <div class="video-text">
           <p>WAsP Engineering is the industry-standard software for calculation of wind conditions, which are relevant for fatigue loads and extreme loads</p>
           <p>It is typically used for calculation of wind conditions for IEC site assessment.</p>
           <p>In this video, I demonstrate how to create the Observed Extreme Wind Climate (EWC), generate the Generalised EWC and simulate the Predicted EWC, as well as some other features.</p>
         </div>
-        <div class="h_iframe">
-          <iframe src="https://www.youtube.com/embed/gw6eMyAMEwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style="height: 0px; overflow: hidden; padding-top: 40%; position: relative; width: 100%;">
+          <iframe
+             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+             src="https://tube.rvere.com/embed?v=gw6eMyAMEwU"
+             title="YouTube video player"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen>
+          </iframe>
         </div>
       </div>
+
 
       <!-- Corine header -->
       <header id="corine" class="section-header">
