@@ -1483,3 +1483,11 @@ input, select, textarea {
 		height: calc(0.675 * 0.33 * (100vw - 1.5em));
 	}
 }
+
+.section-header h1 {
+	font-size: 1.6em
+}
+
+.light-font {
+	color: var(--police-color);
+}
