@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Adding user-scalable=no for this portfolio "gallery" viewing -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Julien's Portfolio</title>
+  <meta name="description" content="A portfolio website to display my projects.">
+  <meta name="author" content="Julien Mourier">
+
+  <!-- These <meta> elements take advantage of something called the Open Graph protocol. -->
+  <!-- This will enhance the appearance of the web page when it’s linked in a social media post. -->
+  <!-- For example, the five meta elements included here will appear in social cards embedding the data. -->
+  <meta property="og:title" content="Julien's Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://julienmourier.github.io/portfolio/#home">
+  <meta property="og:description" content="A portfolio website to display my projects.">
+  <meta property="og:image" content="card.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="preload" href="static/css/open-sans.css" as="font">
+  <link href="static/css/open-sans.css" rel="stylesheet">
+  <link rel="preload" href="static/css/roboto.css" as="font">
+  <link href="static/css/roboto.css" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"> -->
+  <!-- <link href="static/css/icomoon.css" rel="stylesheet"> -->
+  <style> .chevron-down {height: 14px; line-height: 0} </style>
+
+  <!-- Libraries Stylesheet -->
+  <!-- NO NEED FOR THIS PAGE -->
+  <!-- <link href="static/lib/animate/animate.min.css" rel="stylesheet"> -->
+
+  <!-- Bootstrap 5.2 CSS Stylesheet -->
+  <!-- NO NEED FOR THIS PAGE -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+  <!-- If your site already has style.css?v=1.0, if you make some changes and change it to style.css?v=1.1, this will force the browser to re-download the file and overwrite the old one in the browser’s cache -->
+  <!-- CSS Stylesheet of the Lens template, modified by me -->
+  <link rel="stylesheet" href="static/css/main-lens.css?v=1.02">
+
+  <!-- CSS Stylesheet for the navbar -->
+  <link rel="stylesheet" href="static/css/navbar.css">
+
+  <!-- To display in case Javascript is disabled -->
+  <noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+
+</head>
+
+<body class="is-preload-0 is-preload-1 is-preload-2">
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-0">
+   <a href="index.html#home" class="navbar-brand d-block d-lg-none">
+       <h1 class="text-primary fw-bold m-0">Julien</h1>
+   </a>
+   <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+     <div class="navbar-nav ms-auto py-0">
+       <a href="index.html#home" class="nav-item nav-link">Home</a>
+       <a href="index.html#about" class="nav-item nav-link">About</a>
+         <div class="dropdown">
+           <a class="nav-item nav-link"><span>Portfolio</span> <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="wasp.html#header">WAsP</a></li>
+              <li><a class="dropdown-item" href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d" target="_blank" rel="noopener">GIS</a></li>
+              <li><a class="dropdown-item" href="pvsyst.html#header">PVsyst</a></li>
+              <li><a class="dropdown-item" href="#">Python</a></li>
+            </ul>
+         </div>
+     </div>
+     <a href="mailto:julienjmourier@gmail.com?subject=Interest in your profile&body=Dear Mr. Mourier, we are interested in your profile and would like to invite you to an interview."
+        class="btn btn-outline-primary py-1 px-3 mx-3 my-2 d-none d-lg-block fw-bold big-button">Hire Me</a>
+     <div class="navbar-nav me-auto py-0">
+         <a href="index.html#experience" class="nav-item nav-link">Experience</a>
+         <a href="index.html#education" class="nav-item nav-link">Education</a>
+         <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+     </div>
+   </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Main -->
+	<div id="main">
+
+	  <!-- Main header -->
+		<header id="header">
+			<h1>Portfolio PVsyst</h1>
+		</header>
+
+    <!-- Royalla header -->
+    <header id="royalla-basic" class="section-header" loading="lazy">
+      <h1>Case 1: Royalla Solar Farm</h1>
+      <p>This is the most complete study, going through many simulation steps and trying out the different tools and options.</p>
+      <p>The use case is a 24 MWp (20 MWac) PV plant with fixed orientation, near Canberra.</p>
+      <h2 class="light-font"><ul class="ps-0 m-0">Royalla - Basic simulation</ul></h2>
+    </header>
+
+    <!-- Thumbnail Royalla -->
+    <section id="thumbnails-1" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/001.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/001.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 1/15</h2>
+        <p>Aerial view of Royalla Solar Farm.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/002.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/002.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 2/15</h2>
+        <p>Close-up on the fixed structure.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/003.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/003.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 3/15</h2>
+        <p>Creation of a new site (.SIT file) in PVsyst by giving its coordinates.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/004.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/004.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 4/15</h2>
+        <p>Validation of the location.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/005.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/005.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 5/15</h2>
+        <p>Imported weather data from Meteonorm, yearly GHI (Global Horizontal Irradiation) at 1915 kWh/m2</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/006.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/006.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 6/15</h2>
+        <p>Similar data but imported from a different source (NASA-SSE), very different GHI at 1693 kWh/m2/year.
+          This data is crucial for the rest of the simulation, so one must pay great attention to the choosing of the data source.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/007.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/007.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 7/15</h2>
+        <p>An hourly file (.MET) is necessary for the simulation. It can be from our own measured data,
+          or we can generate synthetic hourly values from the +10 years data of our data source.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/008.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/008.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 8/15</h2>
+        <p>Satellite view to get the general layout. We will first simulate one block with its power station.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/009.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/009.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 9/15</h2>
+        <p>This level of zoom in Google Earth allows us to get some basic measurements to replicate the PV tables.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/010.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/010.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 10/15</h2>
+        <p>Using the "Unlimited sheds" feature, and setting the parameters.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/011.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/011.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 11/15</h2>
+        <p>Setting up the type of inverter and PV module, the MPPT inputs, and the connection in strings and series.
+          We must pay attention that the operating voltage matches the operating conditions (T°C for Voc), among other things.
+          The Pnom ratio is good, the inverter is neither overvized nor undersized.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/012.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/012.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 12/15</h2>
+        <p>Checking the sizing conditions, and the estimated overload loss.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/013.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/013.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 13/15</h2>
+        <p>After a first simulation, we see that the Vmpp min is reached quite often. Such a low voltage can only be reached with high temperatures.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/014.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/014.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 14/15</h2>
+        <p>Some of the most essential graphs to check.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/015.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/015.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Basic simulation - Step 15/15</h2>
+        <p>Simulation report, for one block, and standard loss parameters.</p>
+      </article>
+    </section>
+
+    <header id="royalla-detailed" class="section-header" loading="lazy">
+      <h2 class="light-font"><ul class="ps-0 m-0">Royalla - Detailed losses</ul></h2>
+    </header>
+
+    <section id="thumbnails-2" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/016.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/016.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 1/31</h2>
+        <p>The first parameter to change in the detailed losses is the thermal factor. We select "free mounted modules", which has better ventilation than a roof (integrated) system.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/017.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/017.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 2/31</h2>
+        <p>This has immediate implication. With a lower temperature, the voltage will be higher. We expect more power output, which also means the inverter will reach their max. more often.
+        Thus, we see a higher overload loss from inv. power limitation.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/018.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/018.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 3/31</h2>
+        <p>Just with the thermal change, the simulation result is much better with 4487 MWh/year compare to 4335 earlier.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/019.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/019.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 4/31</h2>
+        <p>We see that the system is often at maximum capacity.
+          This is trade-off, we can opt for bigger inverters (more expensive) or accept some loss.</p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/020.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/020.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 5/31</h2>
+        <p>Meanwhile, with the correct thermal factor, the array no longer reaches the min. voltage. </p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/021.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/021.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 6/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/022.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/022.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 7/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/023.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/023.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 8/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/024.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/024.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 9/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/025.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/025.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 10/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/026.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/026.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 11/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/027.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/027.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 12/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/028.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/028.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 13/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/029.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/029.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 14/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/030.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/030.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 15/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/031.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/031.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 16/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/032.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/032.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 17/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/033.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/033.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 18/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/034.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/034.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 19/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/035.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/035.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 20/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/036.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/036.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 21/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/037.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/037.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 22/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/038.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/038.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 23/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/039.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/039.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 24/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/040.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/040.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 25/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/041.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/041.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 26/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/042.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/042.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 27/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/043.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/043.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 28/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/044.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/044.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 29/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/045.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/045.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 30/31</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/046.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/046.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Detailed losses - Step 31/31</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="royalla-3d" class="section-header" loading="lazy">
+      <h2 class="light-font"><ul class="ps-0 m-0">Royalla - Horizon profile, transformer loss, near shadings and 3D modeling</ul></h2>
+    </header>
+
+    <section id="thumbnails-3" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/047.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/047.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 1/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/048.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/048.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 2/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/049.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/049.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 3/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/050.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/050.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 4/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/051.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/051.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 5/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/052.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/052.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 6/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/053.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/053.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 7/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/054.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/054.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 8/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/055.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/055.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 9/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/056.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/056.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 10/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/057.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/057.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 11/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/058.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/058.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 12/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/059.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/059.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 13/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/060.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/060.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 14/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/061.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/061.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 15/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/062.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/062.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 16/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/063.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/063.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 17/18</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/064.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/064.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 18/18</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="royalla-params" class="section-header" loading="lazy">
+      <h2 class="light-font"><ul class="ps-0 m-0">Royalla - Inverter and grid params, P50-P90 evaluation and economic eval.</ul></h2>
+    </header>
+
+    <section id="thumbnails-4" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/065.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/065.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 1/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/066.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/066.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 2/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/067.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/067.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 3/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/068.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/068.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 4/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/069.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/069.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 5/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/070.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/070.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 6/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/071.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/071.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 7/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/072.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/072.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 8/9</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/073.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/073.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 9/9</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="royalla-opt" class="section-header" loading="lazy">
+      <h2 class="light-font"><ul class="ps-0 m-0">Royalla - Optimization tool, batch simulation and ageing tool</ul></h2>
+    </header>
+
+    <section id="thumbnails-5" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/074.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/074.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 1/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/075.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/075.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 2/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/076.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/076.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 3/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/077.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/077.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 4/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/078.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/078.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 5/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/079.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/079.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 6/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/080.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/080.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 7/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/081.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/081.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 8/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/082.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/082.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 9/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/083.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/083.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 10/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/084.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/084.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 11/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/085.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/085.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 12/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/086.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/086.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 13/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/087.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/087.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 14/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/088.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/088.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 15/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/089.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/089.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 16/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/090.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/090.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 17/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/091.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/091.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 18/19</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/092.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/092.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 19/19</h2>
+        <p></p>
+      </article>
+    </section>
+
+
+    <header id="royalla-final" class="section-header" loading="lazy">
+      <h2 class="light-font"><ul class="ps-0 m-0">Royalla - Final report, full 3D plant and importing terrain</ul></h2>
+    </header>
+
+    <section id="thumbnails-6" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/093.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/093.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 1/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/094.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/094.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 2/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/095.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/095.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 3/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/096.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/096.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 4/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/097.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/097.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 5/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/098.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/098.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 6/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/099.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/099.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 7/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/100.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/100.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 8/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/101.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/101.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 9/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/102.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/102.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 10/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/103.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/103.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 11/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/104.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/104.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 12/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/105.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/105.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 13/14</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/106.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/106.jpg" alt="" loading="lazy" /></a>
+        <h2>Royalla - Final report, full 3D plant and importing terrain - Step 14/14</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="bungala" class="section-header" loading="lazy">
+      <h1>Case 2: Bungala Solar Farm</h1>
+      <p>This study focuses on the specificities of PV tracking systems.</p>
+    </header>
+
+    <section id="thumbnails-7" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/001.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/001.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 1/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/002.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/002.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 2/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/003.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/003.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 3/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/004.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/004.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 4/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/005.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/005.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 5/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/006.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/006.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 6/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/007.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/007.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 7/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/008.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/008.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 8/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/009.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/009.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 9/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/010.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/010.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 10/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/011.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/011.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 11/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/012.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/012.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 12/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/013.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/013.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 13/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/014.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/014.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 14/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/015.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/015.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 15/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/016.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/016.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 16/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/017.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/017.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 17/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/018.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/018.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 18/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/019.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/019.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 19/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/020.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/020.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 20/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/021.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/021.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 21/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/022.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/022.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 22/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/023.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/023.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 23/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/024.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/024.jpg" alt="" loading="lazy" /></a>
+        <h2>Bungala SF - Step 24/24</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <div class="youtube-container">
+      <div class="video-text">
+        <p>Demonstration of shadings with and without backtracking.</p>
+      </div>
+      <div style="height: 0px; overflow: hidden; padding-top: 40%; position: relative; width: 100%;">
+        <iframe
+           style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+           src="https://tube.rvere.com/embed?v=FLxPXOHvrGI"
+           title="YouTube video player"
+           frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+           allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <header id="florent" class="section-header" loading="lazy">
+      <h1>Case 3: Residential PV</h1>
+      <h2 class="light-font">3D shadings, power optimizers, micro-inverters, and self-consumption</h2>
+    </header>
+
+    <section id="thumbnails-8" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/001.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/001.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 1/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/002.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/002.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 2/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/003.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/003.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 3/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/004.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/004.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 4/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/005.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/005.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 5/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/006.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/006.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 6/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/007.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/007.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 7/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/008.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/008.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 8/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/009.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/009.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 9/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/010.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/010.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 10/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/011.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/011.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 11/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/012.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/012.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 12/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/013.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/013.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 13/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/014.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/014.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 14/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/015.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/015.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 15/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/016.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/016.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 16/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/017.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/017.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 17/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/018.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/018.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 18/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/019.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/019.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 19/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/020.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/020.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 20/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/021.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/021.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 21/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/022.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/022.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 22/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/023.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/023.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 23/24</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/024.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/024.jpg" alt="" loading="lazy" /></a>
+        <h2>Residential PV - Step 24/24</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="storage" class="section-header" loading="lazy">
+      <h1>Case 4: Storage and off-grid systems</h1>
+    </header>
+
+    <section id="thumbnails-9" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/001.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/001.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 1/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/002.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/002.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 2/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/003.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/003.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 3/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/004.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/004.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 4/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/005.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/005.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 5/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/006.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/006.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 6/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/007.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/007.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 7/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/008.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/008.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 8/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/009.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/009.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 9/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/010.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/010.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 10/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/011.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/011.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 11/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/012.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/012.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 12/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/013.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/013.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 13/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/014.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/014.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 14/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/015.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/015.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 15/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/016.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/016.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 16/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/017.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/017.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 17/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/018.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/018.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 18/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/019.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/019.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 19/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/020.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/020.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 20/21</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/021.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/021.jpg" alt="" loading="lazy" /></a>
+        <h2>Storage and off-grid - Step 21/21</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="bifacial" class="section-header" loading="lazy">
+      <h1>Case 5: Bifacial modules</h1>
+    </header>
+
+    <section id="thumbnails-10" class="thumbnails" loading="lazy">
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/001.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/001.jpg" alt="" loading="lazy" /></a>
+        <h2>Bifacial modules - Step 1/6</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/002.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/002.jpg" alt="" loading="lazy" /></a>
+        <h2>Bifacial modules - Step 2/6</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/003.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/003.jpg" alt="" loading="lazy" /></a>
+        <h2>Bifacial modules - Step 3/6</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/004.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/004.jpg" alt="" loading="lazy" /></a>
+        <h2>Bifacial modules - Step 4/6</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/005.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/005.jpg" alt="" loading="lazy" /></a>
+        <h2>Bifacial modules - Step 5/6</h2>
+        <p></p>
+      </article>
+      <article>
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/006.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/006.jpg" alt="" loading="lazy" /></a>
+        <h2>Bifacial modules - Step 6/6</h2>
+        <p></p>
+      </article>
+    </section>
+
+    <header id="thanks" class="section-header" loading="lazy">
+      <h1>Special thanks from PVsyst team</h1>
+    </header>
+
+    <section id="thumbnails-11" class="thumbnails" loading="lazy">
+      <article class="thumbnail thanks">
+        <a class="thumbnail" href="static/assets/images/pvsyst-fulls/pvsyst_thanks.jpg"><img src="static/assets/images/pvsyst-thumbs/pvsyst_thanks.jpg" alt="" loading="lazy" /></a>
+      </article>
+    </section>
+
+	  <!-- Footer -->
+		<footer id="footer" loading="lazy">
+			<ul class="copyright">
+				<li>Copyright &copy;<script>document.write(new Date().getFullYear());</script>, Julien Mourier.</li><li>Design: <a href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>.</li>
+			</ul>
+		</footer>
+
+	</div>
+
+  <!-- JavaScript Libraries provided with the Lens Template -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/browser.min.js"></script>
+  <script src="static/js/breakpoints.min.js"></script>
+  <script src="static/js/main-lens.js"></script>
+
+  <!-- Bootstrap 5.2 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
