@@ -26,10 +26,8 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
-  <link rel="preload" href="static/css/open-sans.css" as="font">
-  <link href="static/css/open-sans.css" rel="stylesheet">
-  <link rel="preload" href="static/css/roboto.css" as="font">
-  <link href="static/css/roboto.css" rel="stylesheet">
+  <link rel="preload" href="static/css/open-sans.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="static/css/roboto.css" as="style" onload="this.rel='stylesheet'">
 
   <!-- Icon Font Stylesheet -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"> -->
@@ -132,12 +130,12 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/005.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/005.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 5/15</h2>
-        <p>Imported weather data from Meteonorm, yearly GHI (Global Horizontal Irradiation) at 1915 kWh/m2</p>
+        <p>Imported weather data from Meteonorm, yearly GHI (Global Horizontal Irradiation) at 1915 kWh/m²</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/006.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/006.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 6/15</h2>
-        <p>Similar data but imported from a different source (NASA-SSE), very different GHI at 1693 kWh/m2/year.
+        <p>Similar data but imported from a different source (NASA-SSE), very different GHI at 1693 kWh/m²/year.
           This data is crucial for the rest of the simulation, so one must pay great attention to the choosing of the data source.</p>
       </article>
       <article>
@@ -149,7 +147,8 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/008.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/008.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 8/15</h2>
-        <p>Satellite view to get the general layout. We will first simulate one block with its power station.</p>
+        <p>Satellite view to get the general layout. We will first simulate one block with its power station.
+          Royalla is divided into 10 blocks of 2.4 MWp.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/009.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/009.jpg" alt="" loading="lazy" /></a>
@@ -164,29 +163,30 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/011.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/011.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 11/15</h2>
-        <p>Setting up the type of inverter and PV module, the MPPT inputs, and the connection in strings and series.
-          We must pay attention that the operating voltage matches the operating conditions (T°C for Voc), among other things.
-          The Pnom ratio is good, the inverter is neither overvized nor undersized.</p>
+        <p>We have two inverters per power station, with 4 MPPT inputs each, so 8 MPPT in total.
+          To which are connected 408 strings of 20 modules each. We select the type of PV module. The inverters are Ingeteam 1020 kW.
+          Among other things, we must pay attention to the operating voltage matching the operating conditions (T°C for Voc).
+          The Pnom ratio is good, the inverters are neither overvized nor undersized.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/012.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/012.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 12/15</h2>
-        <p>Checking the sizing conditions, and the estimated overload loss.</p>
+        <p>Checking the sizing conditions and the estimated overload loss on the graphs..</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/013.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/013.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 13/15</h2>
-        <p>After a first simulation, we see that the Vmpp min is reached quite often. Such a low voltage can only be reached with high temperatures.</p>
+        <p>After a first simulation, we see that the minimul MPP voltage (Vmpp min) is reached quite often. Such a low voltage can only be reached with high temperatures.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/014.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/014.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 14/15</h2>
-        <p>Some of the most essential graphs to check.</p>
+        <p>Some of the essential graphs to check after simulation.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/015.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/015.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Basic simulation - Step 15/15</h2>
-        <p>Simulation report, for one block, and standard loss parameters.</p>
+        <p>Simulation report, for one block, and default loss parameters.</p>
       </article>
     </section>
 
@@ -198,13 +198,13 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/016.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/016.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 1/31</h2>
-        <p>The first parameter to change in the detailed losses is the thermal factor. We select "free mounted modules", which has better ventilation than a roof (integrated) system.</p>
+        <p>The first parameter to change in the detailed losses is the thermal factor. We select "free mounted modules", which has a better ventilation than a roof (integrated) system.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/017.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/017.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 2/31</h2>
         <p>This has immediate implication. With a lower temperature, the voltage will be higher. We expect more power output, which also means the inverter will reach their max. more often.
-        Thus, we see a higher overload loss from inv. power limitation.</p>
+        Thus, we see a higher overload loss from inv. power limitation (1.3%).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/018.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/018.jpg" alt="" loading="lazy" /></a>
@@ -215,7 +215,7 @@
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/019.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/019.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 4/31</h2>
         <p>We see that the system is often at maximum capacity.
-          This is trade-off, we can opt for bigger inverters (more expensive) or accept some loss.</p>
+          This is a trade-off, we could opt for bigger inverters (more expensive) or accept some loss.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/020.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/020.jpg" alt="" loading="lazy" /></a>
@@ -225,132 +225,140 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/021.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/021.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 6/31</h2>
-        <p></p>
+        <p>The "Mismatch loss" is mainly due to the fact that the characteristics of each module are never rigorously identical.
+        For our 2.4 MWp block, we have 408 strings divided amongst 8 MPPTs, so 51 strings on each MPPT input, and 20 modules on each string.
+        This tool, based on the module characteristics, randomizes a number of module configurations and gives us the avg. mismatch loss.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/022.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/022.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 7/31</h2>
-        <p></p>
+        <p>First, we see the mismatch within a string (module mismatch), mainly due to a mistmatch of currents.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/023.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/023.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 8/31</h2>
-        <p></p>
+        <p>Then we see the mistmatch between strings (string mismatch), mainly due to a mistmatch of voltages.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/024.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/024.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 9/31</h2>
-        <p></p>
+        <p>We can go deeper into the study of the mismatch in voltage between strings, first by defining how the strings are aranged on one table.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/025.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/025.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 10/31</h2>
-        <p></p>
+        <p>And then by defining the whole layout. We get the mismatch loss and other results for each inverter (MPPT) input, taking the length of the wires into consideration.
+        Here for MPPT #1.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/026.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/026.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 11/31</h2>
-        <p></p>
+        <p>And here for MPPT #5, with a 4 mm² wire section.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/027.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/027.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 12/31</h2>
-        <p></p>
+        <p>We can directly check the mismatch figure for each MPPT input, and see the mismatch changing depending on the wire section, here with 2.5 mm².</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/028.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/028.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 13/31</h2>
-        <p></p>
+        <p>And here the same figure with a 6 mm² wire section.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/029.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/029.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 14/31</h2>
-        <p></p>
+        <p>After defining the mismatch losses, we need to estimate the DC ohmic losses, which depend on the length and section of the wires.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/030.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/030.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 15/31</h2>
-        <p></p>
+        <p>The wider the section, the less losses. But like most things, it is a trade-off between the price of the wires and the amount of acceptable DC losses.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/031.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/031.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 16/31</h2>
-        <p></p>
+        <p>Thanks to the previous mismatch study, we could calculate the average length of a string circuit (303m).
+          With 4 mm², we have a total wire cost of 984 AUD, and 1.6% power loss.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/032.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/032.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 17/31</h2>
-        <p></p>
+        <p>If it's too expensive, we can opt for 2.5 mm² wires, but then the loss is 2.6%.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/033.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/033.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 18/31</h2>
-        <p></p>
+        <p>Or we can choose 6 mm² to minimize the loss (1.1%). 4 mm² seems like a good compromise.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/034.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/034.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 19/31</h2>
-        <p></p>
+        <p>Moving onto the AC ohmic losses, we check the transmission line the plant is connected to.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/035.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/035.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 20/31</h2>
-        <p></p>
+        <p>Still checking the transmission line the plant is connected to.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/036.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/036.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 21/31</h2>
-        <p></p>
+        <p>The length of AC wires from inverter to injection point is roughly estimated at 700m. With a 1200 mm² wire section, we would get 8% loss.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/037.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/037.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 22/31</h2>
-        <p></p>
+        <p>Here, as advised, we minimize the voltage drop to a minimum, with 15000 mm² AC wires.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/038.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/038.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 23/31</h2>
-        <p></p>
+        <p>We can achieve a similar result with smaller/cheaper 10000 mm² wires, and an acceptable &lt;1% loss.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/039.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/039.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 24/31</h2>
-        <p></p>
+        <p>The soiling loss is estimated at 1.5% mainly because the PV plant is next to a busy highway (dust).
+          Snow coverage in winter, and O&M cleaning measures can also be considered.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/040.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/040.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 25/31</h2>
-        <p></p>
+        <p>The IAM (Incidence Angle Modifier) losses are due to the reflexion and transmission of the sun's ray at each material interface (air-glass, glass-EVA, EVA-cell).
+        This is calculated based on the module's definitions (type of glass, and if anti-reflective coating).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/041.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/041.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 26/31</h2>
-        <p></p>
+        <p>The auxiliaries losses can be estimated based on the inverter's standby and cooling behavior (e.g. fans working).
+          This information is usually found in the inverter's datasheet.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/042.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/042.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 27/31</h2>
-        <p></p>
+        <p>With the ageing losses, we can use reliable ageing parameters of the model, to compare against the warranty worse case scenario.
+        And because the simulation report is for a year, we can choose which year we want to simulate.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/043.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/043.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 28/31</h2>
-        <p></p>
+        <p>At year 10, we have a 3.80% degradation factor.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/044.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/044.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 29/31</h2>
-        <p></p>
+        <p>It is realistic to foresee system failures, maintenance stops or grid curtailments. Here we define the PV plant as unavailable 2% of the time (7.3 days).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/045.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/045.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 30/31</h2>
-        <p></p>
+        <p>Final report for our 2.4 MWp block.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/046.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/046.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Detailed losses - Step 31/31</h2>
-        <p></p>
+        <p>The Loss Diagram shows us where all the previously defined detailed losses take effect.</p>
       </article>
     </section>
 
@@ -362,92 +370,97 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/047.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/047.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 1/18</h2>
-        <p></p>
+        <p>When a site is near hills or mountain ranges, a horizon profile should be defined.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/048.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/048.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 2/18</h2>
-        <p></p>
+        <p>Indeed Royalla is bordered by the Rob Roy Range to the west, providing less sun during the evening sunsets.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/049.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/049.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 3/18</h2>
-        <p></p>
+        <p>Changing the simulation from one power station to the entire PV plant (20 inverters * 4 MPPT inputs and 81600 modules).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/050.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/050.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 4/18</h2>
-        <p></p>
+        <p>We can add Medium and/or High Voltage Transformers to the losses, although it requires detailed characteristics of the transformers.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/051.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/051.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 5/18</h2>
-        <p></p>
+        <p>With the full PV plant, we now have a report showing us an annual production of 42 GWh.
+          This simulation is still with the "Unlimited Sheds" configuration, this is the best option for simulating large-scale PV plants.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/052.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/052.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 6/18</h2>
-        <p></p>
+        <p>However, we can attempt to simulate a power station block (2.4 MWp) in 3D. First, we design a standard PV table.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/053.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/053.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 7/18</h2>
-        <p></p>
+        <p>Then we design an entire row.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/054.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/054.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 8/18</h2>
-        <p></p>
+        <p>By the way, the Orientation tool in PVsyst, already gives us an estimation of the optimal tilt, which is at 26° here (orange).
+        The plots inform us of the type of loss due to shading, which be useful later.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/055.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/055.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 9/18</h2>
-        <p></p>
+        <p>3D design of a 2.4 MWp block at Royalla.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/056.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/056.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 10/18</h2>
-        <p></p>
+        <p>Mutual shadings don't only the reduce the amount of sun received, they also impact the electrical behavior of the strings depending which cells are shaded.
+        A first estimation of this effect is by defining partitions, i.e. how the strings are shared geometrically on a single PV table.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/057.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/057.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 11/18</h2>
-        <p></p>
+        <p>The "list and management of objects" allows us to define the partitions for all elements at the same time.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/058.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/058.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 12/18</h2>
-        <p></p>
+        <p>3D design of a 2.4 MWp block, with the string partitions defined.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/059.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/059.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 13/18</h2>
-        <p></p>
+        <p>The "linear shadings" option just considers the shadings as a loss of irradiation (black curve at step 8).
+        The "According to module strings" takes the partitions into account. Basically, the lower part of a PV table is more impacted by mutual shadings, so one string sees its current more reduced.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/060.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/060.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 14/18</h2>
-        <p></p>
+        <p>Another option is to defined the strings layout exactly, and not just by geometric partitions. So we enter the Module layout tool.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/061.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/061.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 15/18</h2>
-        <p></p>
+        <p>Here we arrange how the module are distributed on each PV table.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/062.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/062.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 16/18</h2>
-        <p></p>
+        <p>Then we assign each module to a string (color coded). Finally, this will allow us to simulate with "detailed electrical calculation" (seen in step 13),
+        which is more accurate but takes much more time.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/063.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/063.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 17/18</h2>
-        <p></p>
+        <p>There exists different tools to assist with the 3D modeling, such as creating an "Array of tables", instead of "Single PV table".</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/064.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/064.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Horizon profile, transformer loss, near shadings and 3D modeling - Step 18/18</h2>
-        <p></p>
+        <p>This method is quick and efficient but doesn't allow us to define the gaps between the tables of one row, as seen in step 7.</p>
       </article>
     </section>
 
@@ -459,47 +472,49 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/065.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/065.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 1/9</h2>
-        <p></p>
+        <p>Some inverters have the capacity to inject or absorb reactive power, which can be a requirement from the grid operator.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/066.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/066.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 2/9</h2>
-        <p></p>
+        <p>This inverter capability can be used in the Energy Management section, where we can have a leading or lagging behavior at the injection point.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/067.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/067.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 3/9</h2>
-        <p></p>
+        <p>In some circumstances, we can be limited in power by the grid authority.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/068.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/068.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 4/9</h2>
-        <p></p>
+        <p>The simulation overall has uncertainties. One of them is the year-to-year irradiation variability, which we can find in our initially imported meteo file.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/069.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/069.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 5/9</h2>
-        <p></p>
+        <p>The main simulation result is the P50: there is 50% that we produce more and 50% that we produce less.
+        To secure loans, the banking system generally asks for the P75, P90 or P95 values (95% chance that this production target is reached).
+      These values can be estimated knowing the different uncertainties in the system.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/070.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/070.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 6/9</h2>
-        <p></p>
+        <p>Final report with a page for the P50-P90 evaluation</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/071.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/071.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 7/9</h2>
-        <p></p>
+        <p>For the economic evaluation, we can define all the costs in this window.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/072.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/072.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 8/9</h2>
-        <p></p>
+        <p>Example of economic evaluation for a roof system in Geneva.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/073.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/073.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Inverter and grid params, P50-P90 evaluation and economic eval. - Step 9/9</h2>
-        <p></p>
+        <p>We can also estimate the carbon balance of our system, taking into account the energy mix of the country.</p>
       </article>
     </section>
 
@@ -511,97 +526,101 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/074.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/074.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 1/19</h2>
-        <p></p>
+        <p>In the "Advanced Simulation" section, we find the Optimization Tool, which can help us decide on some of the crucial orientation parameters of our system.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/075.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/075.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 2/19</h2>
-        <p></p>
+        <p>We give a range of tilt angles to simulate.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/076.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/076.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 3/19</h2>
-        <p></p>
+        <p>We see that 27° gives us the max. production.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/077.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/077.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 4/19</h2>
-        <p></p>
+        <p>Similarly, we can look for the optimal azimuth angle.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/078.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/078.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 5/19</h2>
-        <p></p>
+        <p>We can also look for two parameters at the same time, in order to get the best combination.
+          This increases the simulation time though, as we can see here with 24 simulations.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/079.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/079.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 6/19</h2>
-        <p></p>
+        <p>We get the best combination in dark red.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/080.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/080.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 7/19</h2>
-        <p></p>
+        <p>Finally, we can look for three parameters at the same time (although already 27 simulations with only 3 steps in each).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/081.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/081.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 8/19</h2>
-        <p></p>
+        <p>We get a 2D graph at each azimuth value.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/082.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/082.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 9/19</h2>
-        <p></p>
+        <p>The issue is that in reality, when we increase the pitch (distance between rows), we "consume" more land,
+          and if we're building on a limited area, this means less modules installed. For this, we can do a Batch Simulation.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/083.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/083.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 10/19</h2>
-        <p></p>
+        <p>We choose which orientation parameters we want to change.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/084.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/084.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 11/19</h2>
-        <p></p>
+        <p>We can also change system parameters, such as the number of inverters or strings.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/085.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/085.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 12/19</h2>
-        <p></p>
+        <p>Finally, we select the output variables we're interested in.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/086.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/086.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 13/19</h2>
-        <p></p>
+        <p>A .CSV file is created for us to tweak and enter our own values to test.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/087.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/087.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 14/19</h2>
-        <p></p>
+        <p>Overview of the .CSV file for the batch simulation, with the basic parameters.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/088.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/088.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 15/19</h2>
-        <p></p>
+        <p>We want to see if we could fit more modules on the same area. Reducing the pitch, allows us to fit more rows of modules, but also increases the mutual shadings.
+        We try to find the optimal tilt for each new pitch configuration to reduce this shading . As we reduce the pitch (7m, 6m, 5m), we give the new number of sheds, strings and inverters which can now fit.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/089.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/089.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 16/19</h2>
-        <p></p>
+        <p>Once the .CSV file is ready, we go back to the still opened simulation window and execute.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/090.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/090.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 17/19</h2>
-        <p></p>
+        <p>These simulations use hourly values just like the main simul. The results are compiled in a new .CSV file.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/091.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/091.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 18/19</h2>
-        <p></p>
+        <p>We highlight in yellow the best configuration at each pitch value. We can see that we definitely produce more as we pack more modules, even if this comes at the cost of more mutual shadings.
+        However, this doesn't necessarily make economical sense, as we now get less per piece of equipement. It must be studied with a return on investment in mind.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/092.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/092.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Optimization tool, batch simulation and ageing tool - Step 19/19</h2>
-        <p></p>
+        <p>Still in the "Advanced Simulation" section, we have an Aging tool, which can simulate many years instead of one.</p>
       </article>
     </section>
 
@@ -614,72 +633,72 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/093.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/093.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 1/14</h2>
-        <p></p>
+        <p>When operating normally (minor grid curtailment) like in 2019, Royalla SF produced 40,186 MWh.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/094.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/094.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 2/14</h2>
-        <p></p>
+        <p>Our final simulation gives 41,810 MWh, which is very close (P90 -&gt; 39,200 MWh).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/095.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/095.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 3/14</h2>
-        <p></p>
+        <p>We designed the whole PV plant in 3D, and also added a ground satellite view.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/096.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/096.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 4/14</h2>
-        <p></p>
+        <p>Comparison between the existing and the 3D modeling.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/097.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/097.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 5/14</h2>
-        <p></p>
+        <p>Different perspective of the 3D view.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/098.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/098.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 6/14</h2>
-        <p></p>
+        <p>Close-up view of part of the modeled PV plant.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/099.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/099.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 7/14</h2>
-        <p></p>
+        <p>With some GIS knowledge, one can prepare and import terrain elevation data in PVsyst, where it is represented with many triangle sections.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/100.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/100.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 8/14</h2>
-        <p></p>
+        <p>All the ground points can be modified, or the terrain simplified by reducing the number of polygons.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/101.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/101.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 9/14</h2>
-        <p></p>
+        <p>View of the terrain after it is rendered.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/102.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/102.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 10/14</h2>
-        <p></p>
+        <p>View of a PV installation following the ground.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/103.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/103.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 11/14</h2>
-        <p></p>
+        <p>Different view of a PV installation following the ground.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/104.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/104.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 12/14</h2>
-        <p></p>
+        <p>Royalla SF on the imported terrain.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/105.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/105.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 13/14</h2>
-        <p></p>
+        <p>When using custom terrain, we can't have each row with a slightly different orientation than the other for the simulation.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/royalla/106.jpg"><img src="static/assets/images/pvsyst-thumbs/royalla/106.jpg" alt="" loading="lazy" /></a>
         <h2>Royalla - Final report, full 3D plant and importing terrain - Step 14/14</h2>
-        <p></p>
+        <p>So we must define general orientation parameters encompassing all the slight changes.</p>
       </article>
     </section>
 
@@ -692,122 +711,128 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/001.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/001.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 1/24</h2>
-        <p></p>
+        <p>Knowing the minimum temperature of a new site is essential to estimate the maximum voltage the PV array can reach.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/002.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/002.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 2/24</h2>
-        <p></p>
+        <p>In the hourly values, the minimum temperature reached over the course of a year is also -1°C.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/003.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/003.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 3/24</h2>
-        <p></p>
+        <p>In Europe, the default "lower temperature for absolute voltage limit" is -10°C.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/004.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/004.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 4/24</h2>
-        <p></p>
+        <p>We used -6°C for Royalla (Canberra). For Bungala Solar Farm (South Australia), it seems adequate to use -1°C.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/005.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/005.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 5/24</h2>
-        <p></p>
+        <p>However, after defining the modules and inverters actually used in this project, we see that the strings could potentially reach a max. voltage of 1521 V, with the inverter max. input being 1500 V.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/006.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/006.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 6/24</h2>
-        <p></p>
+        <p>In order for these parameters to be acceptable, we have to define the lowest temperature as 4°C, in which case the voltage can't exceed 1500 V. It is still extremely rare, it would mean the array being at maximum power (so max. irradiation) while at the lowest temperature. The system usually warms up as the sun rises. It is a safety value though.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/007.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/007.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 7/24</h2>
-        <p></p>
+        <p>For our tracking sytem study, we will try backtracking alone, irradiance optimization alone, combination of the two, and simple tracking.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/008.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/008.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 8/24</h2>
-        <p></p>
+        <p>We will simulate a standard 5MW block, as highlighted on the satellite view.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/009.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/009.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 9/24</h2>
-        <p></p>
+        <p>With the "simple tracking", the system just tracks the course of the sun. We get shading loss (irradiance and electrical) as the system doesn't pay attention to the shades it's casting on the other rows.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/010.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/010.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 10/24</h2>
-        <p></p>
+        <p>The "optimization tracking" typically gets in the position where it is receiving the most irradiation, which can be horizontal if the sky is clouded or the sun not yet on the horizon.
+        As such, we get a better total irradiation, but still shading losses.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/011.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/011.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 11/24</h2>
-        <p></p>
+        <p>The "backtracking" makes sure the PV rows never cast shadows on one another. As such, the shading loss is minimal, but the modules don't face perfectly the sun.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/012.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/012.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 12/24</h2>
-        <p></p>
+        <p>With the added "irradiance optimization", we get an improvement on the total irradiation, but the priority is still no shadow, so the modules are still back-tracking from where the optimal irradiation could be.
+        For a 1P (1 module in portrait) system, this is the best configuration though, and the one mostly used.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/013.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/013.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 13/24</h2>
-        <p></p>
+        <p>However, the shading in 1P is so impactful because no string, and no submodule is spared. In 1L (1 module in landscape) configuration, only 1 ouf of 3 submodules is shaded, which is shunted by its bypass diode,
+        so we still have 2 fully functional submodules per module. The shape of 2L is still the same as 1P configuration.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/014.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/014.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 14/24</h2>
-        <p></p>
+        <p>Finally, with a 4L configuration, we only get 1/4th of the modules shaded. So we can actually focus on the irradiance optimization because the shading is not as impactful.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/015.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/015.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 15/24</h2>
-        <p></p>
+        <p>With a 4L configuration, the tables are much wider, so we increase the pitch accordingly, but at the end, the footprint is stil the same per number of modules.
+        It must be noted that the mounting structure for a 4L would be more complex.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/016.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/016.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 16/24</h2>
-        <p></p>
+        <p>This configuration gives us the maximum irradiance (2486 kWh/m²). And although we have shading irr. loss is at 6%, the shading elec. loss is seriously minimized (only -1%).
+        However, this loss is still enough to make the 1P with backtracking + irradiance optimization the winner, but not by much (11.324 vs 11.262 GWh). In reality, depending on the latitude of the site, 1P backtracking solution are not systematically the best.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/017.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/017.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 17/24</h2>
-        <p></p>
+        <p>Simulation report for the full PV plant (276 GWh).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/018.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/018.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 18/24</h2>
-        <p></p>
+        <p>Real production in 2019 at 272 GWh, very close to our simulation.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/019.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/019.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 19/24</h2>
-        <p></p>
+        <p>Adding a grid limitation at 110 MW.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/020.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/020.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 20/24</h2>
-        <p></p>
+        <p>Visualizing the production that is over 110 MW.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/021.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/021.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 21/24</h2>
-        <p></p>
+        <p>New total production with grid limitation.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/022.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/022.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 22/24</h2>
-        <p></p>
+        <p>As seen in steps 5 and 6, the Pnom ratio was 1.01, i.e. having 2500 kW of inverter for 2500 kWp of modules. The inverters aren't not working at full power most of the time, so unless they were a bargain,
+        it could have been wise to use smaller/cheaper inverters. Here with 2280 kW Siemens, the overload loss is only 0.3% and Pnom ratio 1.11.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/023.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/023.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 23/24</h2>
-        <p></p>
+        <p>With Siemens Sinacon 2090 kW inverters, it would still be acceptable, with a Pnom at 1.21 and overload loss estimated at 1.7%.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bungala/024.jpg"><img src="static/assets/images/pvsyst-thumbs/bungala/024.jpg" alt="" loading="lazy" /></a>
         <h2>Bungala SF - Step 24/24</h2>
-        <p></p>
+        <p>After simulation, the overload loss is not even that big, and we get a total production of 275.3 GWh vs. 276.38 GWh previously, but with much cheaper inverters.</p>
       </article>
     </section>
 
@@ -836,234 +861,254 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/001.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/001.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 1/24</h2>
-        <p></p>
+        <p>An individual wishes to install a PV system on his roof, somewhere in France. A first satellite recognition is always useful.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/002.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/002.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 2/24</h2>
-        <p></p>
+        <p>With some drawings provided, we can design the outshape of the house. A good 3D design ensures the shadows will be simulated properly.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/003.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/003.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 3/24</h2>
-        <p></p>
+        <p>Different types of modules are considered. Here with shingled PV modules.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/004.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/004.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 4/24</h2>
-        <p></p>
+        <p>Here with half-cut modules.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/005.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/005.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 5/24</h2>
-        <p></p>
+        <p>Shading simulation: the west wing of the house casts shadows on the modules in the evening.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/006.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/006.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 6/24</h2>
-        <p></p>
+        <p>Shading simulation again: trees only impactful in winter, most of them without leaves, except one big thorny tree. </p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/007.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/007.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 7/24</h2>
-        <p></p>
+        <p>Power optimizers (not to confuse with micro-inverters) are DC-DC converters and quite complex to simulate. SolarEdge products are leading the market.
+        They can be efficient on small installations where each module is optimized.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/008.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/008.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 8/24</h2>
-        <p></p>
+        <p>Parameters of a single optimizer. Its input voltage range is quite wide (13-87V). It performs MPP tracking on each module, adapting the voltage to get the max. power out of it.
+        But the output is still DC. Essentially, in power electronics, this is a buck-boost converter.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/009.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/009.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 9/24</h2>
-        <p></p>
+        <p>SolarEdge Optimizer I/V curve, with a 500W module.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/010.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/010.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 10/24</h2>
-        <p></p>
+        <p>SolarEdge Optimizer I/V curve, with a 300W module. Essentially it performs MPP on the input, adapting the voltage to get the max. current and power.
+        And independently, it can return this power with a different output voltage, which will be conditioned by the number of modules in series and the SolarEdge inverter input voltage.
+        That inverter will be highly efficient because its only task is to transform from DC to AC, from a fixed voltage.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/011.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/011.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 11/24</h2>
-        <p></p>
+        <p>SolarEdge Optimizer P/V curve. We can see more easily that the optimizer is capable of delivering the same power across a wide voltage range.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/012.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/012.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 12/24</h2>
-        <p></p>
+        <p>Some PVsyst documentation about power optimizers.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/013.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/013.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 13/24</h2>
-        <p></p>
+        <p>With 6x DualSun 500W modules and their corresponding P505 optimizers, we must choose a corresponding SolarEdge inverter, here the SE3000H.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/014.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/014.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 14/24</h2>
-        <p></p>
+        <p>Comparison between SMA (single inverter) and SolarEdge (with optimizers). The optimizers have an conversion efficiency, so unfortunately we lose 2.7% there. But then, we have 0% of loss due to module mistmatch.
+        And we have a very good inverter efficiency with only 1.1% loss. The SMA inverter has an average loss of 4.7% during all conditions of operation. In the end, the production is better with the optimizers, but the system also more costly.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/015.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/015.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 15/24</h2>
-        <p></p>
+        <p>Similarly, micro-inverters are also more and more popular for small installations, to get the most out of each module. Here, we also have an MPP tracking on each module, but then it is directly converted to AC.
+        The only issue is that, with a "low" voltage of 230Vac instead of 500-800Vdc, the AC ohmic loss can increase exponentially with the length of cable. It is still okay for small installations though.
+        The advantage compared to power optimizers is that we save the cost of having a main inverter.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/016.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/016.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 16/24</h2>
-        <p></p>
+        <p>Choosing the right model of micro-inverter to the PV module.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/017.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/017.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 17/24</h2>
-        <p></p>
+        <p>Comparison of the 3 different systems. The micro-inverters have an efficiency of 96.6% (3.4% loss). Overall, the results between the system with power optimizers and the one with micro-inverters are very similar.
+        The decision should be based on the cost of installation.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/018.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/018.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 18/24</h2>
-        <p></p>
+        <p>PVsyst can also simulate grid-connected systems with self-consumption, meaning the energy is used when there is a need (load), or else is injected onto the grid.
+        Inversely, it can consume from the grid when the PV system doesn't provide enough.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/019.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/019.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 19/24</h2>
-        <p></p>
+        <p>For this to work, the load profile of the house must be well defined (how much it consumes and when). Ideally an hourly profile for the whole year (as seen on the graph and table).
+          Some load profile templates are provided.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/020.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/020.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 20/24</h2>
-        <p></p>
+        <p>Consumption of a household over a week, with typical spikes in the morning, evening and weekend.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/021.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/021.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 21/24</h2>
-        <p></p>
+        <p>The user's needs can also be defined by listing the appliances and their power, and the number of hours they're used per day.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/022.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/022.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 22/24</h2>
-        <p></p>
+        <p>This hourly distribution of the appliances can be helped with this dial system.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/023.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/023.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 23/24</h2>
-        <p></p>
+        <p>The final report looks like this, where we see the energy from solar to user, from solar to grid, and from grid to user.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/florent/024.jpg"><img src="static/assets/images/pvsyst-thumbs/florent/024.jpg" alt="" loading="lazy" /></a>
         <h2>Residential PV - Step 24/24</h2>
-        <p></p>
+        <p>These values are also visible on the main table.</p>
       </article>
     </section>
 
     <header id="storage" class="section-header" loading="lazy">
       <h1>Case 4: Storage and off-grid systems</h1>
+      <p>First an off-grid system, then a grid-connected system with storage.</p>
     </header>
 
     <section id="thumbnails-9" class="thumbnails" loading="lazy">
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/001.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/001.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 1/21</h2>
-        <p></p>
+        <p>PVsyst has a whole section dedicated to off-grid (stand alone) systems.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/002.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/002.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 2/21</h2>
-        <p></p>
+        <p>We find stand-alone projects of every scale, but a very simple one could be defined like this.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/003.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/003.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 3/21</h2>
-        <p></p>
+        <p>First off, the "detailed pre-sizing" part helps us to make out the main characteristics of our storage system, namely the PLOL (Probability of Loss of Load), the autonomy in days, and the battery voltage,
+        mainly based on our consumption needs and size of our appliances.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/004.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/004.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 4/21</h2>
-        <p></p>
+        <p>In the battery database, each model has its own characteristics. We find both lead-acid and lithium-ion technology.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/005.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/005.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 5/21</h2>
-        <p></p>
+        <p>Many phenomenons must be integrated to reliably model a battery: such as the voltage according to the State Of Charge (SOC), the effect of temperature on the battery capacity,
+        the self-discharge, the degradation over time, etc.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/006.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/006.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 6/21</h2>
-        <p></p>
+        <p>Battery cell voltage as a function of the SOC, for different charge and discharge currents.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/007.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/007.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 7/21</h2>
-        <p></p>
+        <p>Once the storage is defined to our needs, we can choose our PV modules, and also the type of solar charge controller. There are many different types.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/008.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/008.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 8/21</h2>
-        <p></p>
+        <p>Some of the main functions of the controller include stopping the charging when the battery is full (95%), and re-enabling it below a threshold (75%),
+        and also stopping the discharge (loss of power) when the battery is too low to avoid damaging it.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/009.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/009.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 9/21</h2>
-        <p></p>
+        <p>During the switching on or off of the charging or discharging, the voltage jumps around and we can see that, at the same State Of Charge (SOC),
+          the voltage can be different depending if the battery is in charging or discharging mode, which adds to the complexity of measuring the SOC.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/010.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/010.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 10/21</h2>
-        <p></p>
+        <p>Simulation for a standard household, but with an oversized PV array to reduce the probability of loss of load. It is cheaper nowadays to oversize the PV array rather than the storage.
+        Here, with a 4kW system, we have only 0.3% of the energy missing.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/011.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/011.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 11/21</h2>
-        <p></p>
+        <p>Main results of our stand-alone system. Only 0.4% of the year without power (Loss of load).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/012.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/012.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 12/21</h2>
-        <p></p>
+        <p>In this second simulation, we only have a need of 2.2 kWh/day (800 kWh/year). We try a PV system slightly undersized (480 Wp).
+        A loss of load at 5% is considered acceptable (still 438hrs in the year without power). In this scenario, we have loss of load 9.8% of the time.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/013.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/013.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 13/21</h2>
-        <p></p>
+        <p>Loss Diagram for this 2nd simulation. We see we are more reliant on the battery (65.6% of the energy provided).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/014.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/014.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 14/21</h2>
-        <p></p>
+        <p>We can also display some key results in a table, such as the Loss Of Load (LOL) in hrs and %.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/015.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/015.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 15/21</h2>
-        <p></p>
+        <p>Grid-connected systems can also have a battery storage, with a different battery strategy. We might want to increase self-consumption, as studied from step 18 in the residential case.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/016.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/016.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 16/21</h2>
-        <p></p>
+        <p>Weak grid islanding strategy: in some countries, the grid is highly unreliable. So for critical industries, the storage can just be to cover these small random grid cuts.
+        To simulate this, we can provide a randomized grid unavailability profile, where we can give the average duration and number of grid cuts.
+        From there, we can size our battery storage.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/017.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/017.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 17/21</h2>
-        <p></p>
+        <p>Another strategy can be for peak shaving. We store the energy to release it during the known peak consumption hours.
+        In this scenario, we limit our 22.3 MWac PV plant at 16MW, so we store the excess energy, and we release it at a max. discharge of 2.5MW starting at 5pm (evening peak load).</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/018.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/018.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 18/21</h2>
-        <p></p>
+        <p>Peak shaving explained.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/019.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/019.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 19/21</h2>
-        <p></p>
+        <p>We see the peak shaving strategy in action. Our PV plant often distributing at the max. allowed power of 16MW, and releasing at 2.5MW.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/020.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/020.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 20/21</h2>
-        <p></p>
+        <p>On the loss diagram, even with this strategy, 95.4% of the energy is directly injected onto the grid, and only 4.6% is stored. But the storage could still add value to a project, also providing a service to the grid.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/storage/021.jpg"><img src="static/assets/images/pvsyst-thumbs/storage/021.jpg" alt="" loading="lazy" /></a>
         <h2>Storage and off-grid - Step 21/21</h2>
-        <p></p>
+        <p>Main simulation results of our PV plant with peak shaving storage strategy.</p>
       </article>
     </section>
 
@@ -1075,32 +1120,32 @@
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/001.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/001.jpg" alt="" loading="lazy" /></a>
         <h2>Bifacial modules - Step 1/6</h2>
-        <p></p>
+        <p>Parameters of a bifacial module in the database.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/002.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/002.jpg" alt="" loading="lazy" /></a>
         <h2>Bifacial modules - Step 2/6</h2>
-        <p></p>
+        <p>When choosing bifacial modules in a project, a new interface is available.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/003.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/003.jpg" alt="" loading="lazy" /></a>
         <h2>Bifacial modules - Step 3/6</h2>
-        <p></p>
+        <p>The different irradiation components to take into account with bifacial modules.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/004.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/004.jpg" alt="" loading="lazy" /></a>
         <h2>Bifacial modules - Step 4/6</h2>
-        <p></p>
+        <p>Model to use depending if fixed installation or tracking system.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/005.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/005.jpg" alt="" loading="lazy" /></a>
         <h2>Bifacial modules - Step 5/6</h2>
-        <p></p>
+        <p>Visualization of some of the parameters needed to model the irradiation on the rear side.</p>
       </article>
       <article>
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/bifacial/006.jpg"><img src="static/assets/images/pvsyst-thumbs/bifacial/006.jpg" alt="" loading="lazy" /></a>
         <h2>Bifacial modules - Step 6/6</h2>
-        <p></p>
+        <p>Final results and loss diagram for a bifacial PV system (lots of new energy flows to consider).</p>
       </article>
     </section>
 
@@ -1111,6 +1156,8 @@
     <section id="thumbnails-11" class="thumbnails" loading="lazy">
       <article class="thumbnail thanks">
         <a class="thumbnail" href="static/assets/images/pvsyst-fulls/pvsyst_thanks.jpg"><img src="static/assets/images/pvsyst-thumbs/pvsyst_thanks.jpg" alt="" loading="lazy" /></a>
+        <h2>Special thanks for contributing, from PVsyst team</h2>
+        <p>After a lot of involvement on the PVsyst forum, pointing out bugs and suggesting improvements, the PVsyst team sent me their thanks.</p>
       </article>
     </section>
 
