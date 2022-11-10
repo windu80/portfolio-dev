@@ -25,7 +25,7 @@
         }
     });
 
-    // REMOVING THIS FUNCTION, MAKES THE SCROLLING TERRIBLY SLOW
+    // REMOVING THIS FUNCTION, BECAUSE IT MAKES THE SCROLLING TERRIBLY SLOW
     // Smooth scrolling on the navbar links
     // $(".navbar-nav a").on('click', function (event) {
     //     if (this.hash !== "") {
