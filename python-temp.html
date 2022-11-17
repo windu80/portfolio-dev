@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Julien's Portfolio</title>
+  <meta name="description" content="A portfolio website to display my projects.">
+  <meta name="author" content="Julien Mourier">
+
+  <!-- These <meta> elements take advantage of something called the Open Graph protocol. -->
+  <!-- This will enhance the appearance of the web page when it’s linked in a social media post. -->
+  <!-- For example, the five meta elements included here will appear in social cards embedding the data. -->
+  <meta property="og:title" content="Julien's Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://julienmourier.github.io/portfolio/#home">
+  <meta property="og:description" content="A portfolio website to display my projects.">
+  <meta property="og:image" content="card.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
+  <link rel="preload" href="static/css/open-sans.css" as="style" onload="this.rel='stylesheet'">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <!-- <link href="static/lib/animate/animate.min.css" rel="stylesheet"> -->
+
+  <!-- Bootstrap 5.2 CSS Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- My Own CSS Stylesheet -->
+  <!-- If your site already has style.css?v=1.0, if you make some changes and change it to style.css?v=1.1, this will force the browser to re-download the file and overwrite the old one in the browser’s cache -->
+  <link rel="stylesheet" href="static/css/styles.css?v=1.04">
+
+</head>
+
+
+
+  <!-- "data-bs-spy", "data-bs-target" and "data-bs-offset" are so that the right navbar button highlights depending on the active section of the website I'm in -->
+  <!-- See the documentation about Scrollspy -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+
+  <!-- Loading Spinner Start -->
+<!--   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div> -->
+  <!-- Loading Spinner End -->
+
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5">
+   <a href="index.html#home" class="navbar-brand d-block d-lg-none">
+       <h1 class="text-primary fw-bold m-0">Julien</h1>
+   </a>
+   <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+     <div class="navbar-nav ms-auto py-0">
+       <a href="index.html#home" class="nav-item nav-link active">Home</a>
+       <a href="index.html#about" class="nav-item nav-link">About</a>
+         <div class="dropdown">
+           <a href="#portfolio" class="nav-item nav-link"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="wasp.html#header">WAsP</a></li>
+              <li><a class="dropdown-item" href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d" target="_blank" rel="noopener">GIS</a></li>
+              <li><a class="dropdown-item" href="pvsyst.html#header">PVsyst</a></li>
+              <li><a class="dropdown-item" href="python.html">Python</a></li>
+            </ul>
+         </div>
+     </div>
+     <a href="mailto:julienjmourier@gmail.com?subject=Interest in your profile&body=Dear Mr. Mourier, we are interested in your profile and would like to invite you to an interview."
+        class="btn btn-outline-primary py-1 px-3 mx-3 my-2 d-none d-lg-block fw-bold big-button">Hire Me</a>
+     <div class="navbar-nav me-auto py-0">
+         <a href="index.html#experience" class="nav-item nav-link">Experience</a>
+         <a href="index.html#education" class="nav-item nav-link">Education</a>
+         <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+     </div>
+   </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Python Sample Start -->
+    <div class="container-fluid py-5 my-5" id="python-sample" >
+        <div class="container px-4 mt-2 mt-sm-3 mt-lg-5 d-flex flex-column align-items-center">
+            <h1 class="display-5 text-center mb-4 pb-1 pb-sm-2 pb-lg-4">Page in construction...</h1>
+            <div class="youtube-container">
+              <div class="video-text mb-2">
+                <h3>But here's a sample:</h3>
+                <p class="mb-2 mb-sm-3">
+                  The press website RenewEconomy is pretty good at keeping up-to-date maps of renewable projects, in operation or in construction;
+                  arguably better than some of the official database.
+                </p>
+              </div>
+              <div style="height: 0px; overflow: hidden; padding-top: 45%; position: relative; width: 100%;">
+                <iframe
+                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                   src="https://tube.rvere.com/embed?v=JQIvUvXBkk4"
+                   title="YouTube video player"
+                   frameborder="0"
+                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                   allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-text mt-2 mt-sm-3">
+                <p class="mb-2 mb-sm-3">
+                  With <span class="fw-semibold">Python and the Selenium library</span>, we can scrape this public data and build our own database, complete with the name, coordinates, power, technology, owner, etc., of each power plant.
+                </p>
+                <p class="mb-2 mb-sm-3">Then we can import this database to use in our GIS tool, such as ArcMap.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Python Sample End -->
+
+
+  <!-- Copyright Start -->
+  <div class="container-fluid bg-dark text-white py-4 copyright-section fixed-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                <br>Designed By Julien Mourier
+            </div>
+            <!-- <div class="col-md-6 text-center text-md-end">
+                /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
+                Inspired By <a class="text-primary" href="https://themewagon.com/themes/free-bootstrap-5-html5-css3-portfolio-website-template-proman/" target="_blank" rel="noopener">ProMan</a>
+                , <a class="text-primary" href="https://themewagon.com/themes/free-bootstrap-4-html5-portfolio-website-template-devfolio-2/" target="_blank" rel="noopener">DevFolio </a>
+                and <a class="text-primary" href="https://themewagon.com/themes/free-one-page-bootstrap-4-html5-personal-portfolio-website-template-clark/" target="_blank" rel="noopener">Clark</a>
+                <br>Designs By <a class="text-secondary" href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a>
+                , <a class="text-secondary" href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
+                <br>Distributed By <a class="text-secondary" href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
+            </div> -->
+        </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- JavaScript Libraries -->
+  <!-- Bootstrap 5.2 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Latest JQuery Library -->
+  <!-- jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+  <!-- Library dealing with the job titles typing -->
+  <!-- <script src="static/lib/typed/typed.min.js"></script> -->
+  <!-- Wow library, to make elements appear with fadeInUp animation as we scroll -->
+  <!-- <script src="static/lib/wow/wow.min.js"></script> -->
+  <!-- More libraries, keeping them to not break any functionality -->
+  <!-- <script src="static/lib/easing/easing.min.js"></script> -->
+  <!-- <script src="static/lib/waypoints/waypoints.min.js"></script> -->
+  <!-- <script src="static/lib/counterup/counterup.min.js"></script> -->
+  <!-- <script src="static/lib/owlcarousel/owl.carousel.min.js"></script> -->
+  <!-- <script src="static/lib/isotope/isotope.pkgd.min.js"></script> -->
+  <!-- <script src="static/lib/lightbox/js/lightbox.min.js"></script> -->
+
+  <!-- ProMan template Javascript -->
+  <!-- <script src="static/js/main.js"></script> -->
+
+</body>
+</html>

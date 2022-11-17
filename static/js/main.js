@@ -19,9 +19,9 @@
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.navbar').fadeIn('slow').css('display', 'flex');
+            $('#home-body .navbar').fadeIn('slow').css('display', 'flex');
         } else {
-            $('.navbar').fadeOut('slow').css('display', 'none');
+            $('#home-body .navbar').fadeOut('slow').css('display', 'none');
         }
     });
 

@@ -31,7 +31,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 
   <!-- Libraries Stylesheet -->
-  <!-- <link href="static/lib/animate/animate.min.css" rel="stylesheet"> -->
+  <link href="static/lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Bootstrap 5.2 CSS Stylesheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -39,21 +39,19 @@
   <!-- My Own CSS Stylesheet -->
   <!-- If your site already has style.css?v=1.0, if you make some changes and change it to style.css?v=1.1, this will force the browser to re-download the file and overwrite the old one in the browser’s cache -->
   <link rel="stylesheet" href="static/css/styles.css?v=1.04">
-
 </head>
 
 
 
   <!-- "data-bs-spy", "data-bs-target" and "data-bs-offset" are so that the right navbar button highlights depending on the active section of the website I'm in -->
   <!-- See the documentation about Scrollspy -->
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-
+<body id="python-body">
   <!-- Loading Spinner Start -->
-<!--   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-        <span class="sr-only">Loading...</span>
-    </div>
-</div> -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
   <!-- Loading Spinner End -->
 
 
@@ -67,10 +65,10 @@
    </button>
    <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
      <div class="navbar-nav ms-auto py-0">
-       <a href="index.html#home" class="nav-item nav-link active">Home</a>
+       <a href="index.html#home" class="nav-item nav-link">Home</a>
        <a href="index.html#about" class="nav-item nav-link">About</a>
          <div class="dropdown">
-           <a href="#portfolio" class="nav-item nav-link"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
+           <a href="#portfolio" class="nav-item nav-link active"><span>Portfolio</span> <i class="fa-solid fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="wasp.html#header">WAsP</a></li>
               <li><a class="dropdown-item" href="https://storymaps.arcgis.com/stories/51b554201f464aea842d201c0020d88d" target="_blank" rel="noopener">GIS</a></li>
@@ -91,57 +89,616 @@
   <!-- Navbar End -->
 
 
-  <!-- Testimonial Start -->
-    <div class="container-fluid py-5 my-5" id="testimonial" >
-        <div class="container px-4 mt-2 mt-sm-3 mt-lg-5 d-flex flex-column align-items-center">
-            <h1 class="display-5 text-center mb-4 pb-1 pb-sm-2 pb-lg-4">Page in construction...</h1>
-            <div class="youtube-container">
-              <div class="video-text mb-2">
-                <h3>But here's a sample:</h3>
-                <p class="mb-2 mb-sm-3">
-                  The press website RenewEconomy is pretty good at keeping up-to-date maps of renewable projects, in operation or in construction;
-                  arguably better than some of the official database.
-                </p>
-              </div>
-              <div style="height: 0px; overflow: hidden; padding-top: 45%; position: relative; width: 100%;">
-                <iframe
-                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
-                   src="https://tube.rvere.com/embed?v=JQIvUvXBkk4"
-                   title="YouTube video player"
-                   frameborder="0"
-                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                   allowfullscreen>
-                </iframe>
-              </div>
-              <div class="video-text mt-2 mt-sm-3">
-                <p class="mb-2 mb-sm-3">
-                  With <span class="fw-semibold">Python and the Selenium library</span>, we can scrape this public data and build our own database, complete with the name, coordinates, power, technology, owner, etc., of each power plant.
-                </p>
-                <p class="mb-2 mb-sm-3">Then we can import this database to use in our GIS tool, such as ArcMap.</p>
-              </div>
+
+  <!-- Datascience Start -->
+  <div id="data-science" class="python pt-5 mt-5">
+      <div class="container mt-2 mt-sm-3 mt-lg-5 pt-lg-2">
+          <header class="row mb-4 pb-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0"><strong>Portfolio Python</strong></h1>
             </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
+          </header>
+          <header class="row mb-0 mb-md-4 pb-0 pb-md-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0">Data Science</h1>
+            </div>
+          </header>
+          <div class="row python-container">
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/power_curve.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Power Curve Model</h3>
+                          <a class="btn" href="templates/python-datascience/power-curve.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/housing_04.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3 style="font-size: 16px">Multivariable Regression (House Prices)</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_80_Multivariable_Regression_and_Valuation_Model.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/handwashing_02.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>The Discovery of Handwashing</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_79_Dr_Semmelweis_Handwashing_Discovery.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/nobel_08.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Nobel Prize Analysis</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_78_Nobel_Prize_Analysis.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/movies_03.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Linear Regression (Movie Budget)</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_77_Seaborn_and_Linear_Regression.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div><!--
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/numpy_02.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Image Computation (NumPy)</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_76_Computation_with_NumPy_and_N_Dimensional_Arrays.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div> -->
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/android_apps_04.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Android Apps Analysis</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_75_Google_Play_Store_App_Analytics.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/google_trends_03.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Google Trends Analysis</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_74_Google_Trends_and_Data_Visualisation.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div><!--
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/lego_02.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>LEGO Products Analysis</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_73_Lego_Analysis.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div> -->
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/programming_languages_02.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Programming Languages Popularity</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_72_Programming_Languages_Analysis.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/datascience/college_degrees.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Post-University Salaries by Major</h3>
+                          <a class="btn" href="templates/python-datascience/2022_day_71_Data_Exploration_Pandas_College_Major.html" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Datascience End -->
+
+
+  <!-- Selenium Start -->
+  <div id="selenium" class="python bg-light">
+      <div class="container">
+          <header class="row mb-4 pb-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0">Web Automation</h1>
+            </div>
+          </header>
+          <div class="row python-container">
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=JQIvUvXBkk4"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Web Scraping WF Coordinates</h3>
+                          <a class="btn" href="https://youtu.be/JQIvUvXBkk4" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=iIqq9_BHB2g"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Automatic Job Searching and Saving</h3>
+                          <a class="btn" href="https://youtu.be/iIqq9_BHB2g" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=BYW4TK0Ue94"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Data Entry Automation</h3>
+                          <a class="btn" href="https://youtu.be/BYW4TK0Ue94" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=JhmUR__C7_s"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Internet Speed Complaint Bot</h3>
+                          <a class="btn" href="https://youtu.be/JhmUR__C7_s" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Selenium End -->
+
+
+  <!-- Python-Script Start -->
+  <div id="script" class="python">
+      <div class="container">
+          <header class="row mb-4 pb-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0">Writing Scripts and Using APIs</h1>
+            </div>
+          </header>
+          <div class="row python-container">
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/script/automated_letters.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Write Letters Automatically</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/AutomatedLetters#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=eJCzzmNcJNs"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Automatic Email Sender</h3>
+                          <a class="btn" href="https://youtu.be/eJCzzmNcJNs" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=nsOxTO98qEw"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Stock Market SMS Alert</h3>
+                          <a class="btn" href="https://youtu.be/nsOxTO98qEw" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=_FOhNIeq_N0"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Rain SMS Alert</h3>
+                          <a class="btn" href="https://youtu.be/_FOhNIeq_N0" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/script/100_best_movies.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Create a List of Best Movies</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/CreateBestMoviesList#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=y6DIgFY6_-4"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Amazon Price Alert</h3>
+                          <a class="btn" href="https://youtu.be/y6DIgFY6_-4" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Python-Script End -->
+
+
+  <!-- Python HTML Start -->
+  <div id="flask" class="python bg-light">
+      <div class="container">
+          <header class="row mb-4 pb-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0">Back-end Web Development</h1>
+            </div>
+          </header>
+          <div class="row python-container">
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/flask/agify_genderize.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Dynamic HTML Pages with Jinja</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/AgeAndGenderHTML#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/flask/HTML_visit_card.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Rendering HTML Page with Flask</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/VisitCardHTML#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/flask/basic_blog_HTML.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Rendering a Blog Using Templates</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/BlogRenderingHTML#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=Ti-doOYsPsc"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Building Advanced HTML Forms</h3>
+                          <a class="btn" href="https://youtu.be/Ti-doOYsPsc" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=DDMV1wTnNnI"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Secure Web Authentication</h3>
+                          <a class="btn" href="https://youtu.be/DDMV1wTnNnI" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                        <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                          <iframe
+                             style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                             src="https://tube.rvere.com/embed?v=xc7HlYqKARM"
+                             title="YouTube video player"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen loading="lazy">
+                          </iframe>
+                        </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Server with an SQL Database</h3>
+                          <a class="btn" href="https://youtu.be/xc7HlYqKARM" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <div style="height: 0px; overflow: hidden; padding-top: 75%; position: relative; width: 100%; transition: .5s;">
+                            <iframe
+                               style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                               src="https://tube.rvere.com/embed?v=0aX4F-uCUQQ"
+                               title="YouTube video player"
+                               frameborder="0"
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                               allowfullscreen loading="lazy">
+                            </iframe>
+                          </div>
+                      </div>
+                      <div class="python-text">
+                          <h3>Movie Database Project</h3>
+                          <a class="btn" href="https://youtu.be/0aX4F-uCUQQ" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Python HTML End -->
+
+
+  <!-- GUI Start -->
+  <div id="ui" class="python">
+      <div class="container">
+          <header class="row mb-4 pb-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0">Graphic User Interface (GUI)</h1>
+            </div>
+          </header>
+          <div class="row python-container">
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/gui/quizzler.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Quiz Game</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/Quizzler#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/gui/pomodoro.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Pomodoro Time Counter</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/Pomodoro#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/gui/password_manager.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Password Manager</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/PasswordManager#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/gui/photo_watermark_01.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Photo Watermark Tool</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/PhotoWatermark#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- GUI End -->
+
+
+  <!-- Games Start -->
+  <div id="games" class="python bg-light pb-md-3 pb-xxl-5">
+      <div class="container pb-6">
+          <header class="row mb-4 pb-1 pb-sm-2 pb-lg-5 wow fadeInUp justify-content-center" data-wow-delay="0.1s">
+            <div class="text-center">
+                <h1 class="display-5 mb-0">Games</h1>
+            </div>
+          </header>
+          <div class="row python-container">
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.0s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/games/snake_game.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Snake Game</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/SnakeGame#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.2s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/games/states_guessing_game.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>US States Game</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/usaStatesGuessingGame#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 python-item wow fadeInUp" data-wow-delay="0.4s" loading="lazy">
+                  <div class="python-wrap">
+                      <div class="python-img">
+                          <img src="static/assets/images/python/games/turtle_crossing.webp" alt="Image" loading="lazy">
+                      </div>
+                      <div class="python-text">
+                          <h3>Turtle Crossing Game</h3>
+                          <a class="btn" href="https://replit.com/@julienmourier/TurtleCrossingGame#main.py" target="_blank" rel="noopener">+</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Games End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
 
 
   <!-- Copyright Start -->
-  <div class="container-fluid bg-dark text-white py-4 copyright-section fixed-bottom">
+  <div class="container-fluid bg-dark text-white py-4 copyright-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
                 <br>Designed By Julien Mourier
             </div>
-            <!-- <div class="col-md-6 text-center text-md-end">
-                /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
+            <div class="col-md-6 text-center text-md-end">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                 Inspired By <a class="text-primary" href="https://themewagon.com/themes/free-bootstrap-5-html5-css3-portfolio-website-template-proman/" target="_blank" rel="noopener">ProMan</a>
                 , <a class="text-primary" href="https://themewagon.com/themes/free-bootstrap-4-html5-portfolio-website-template-devfolio-2/" target="_blank" rel="noopener">DevFolio </a>
                 and <a class="text-primary" href="https://themewagon.com/themes/free-one-page-bootstrap-4-html5-personal-portfolio-website-template-clark/" target="_blank" rel="noopener">Clark</a>
                 <br>Designs By <a class="text-secondary" href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a>
                 , <a class="text-secondary" href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
                 <br>Distributed By <a class="text-secondary" href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
-            </div> -->
+            </div>
         </div>
     </div>
   </div>
@@ -153,21 +710,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <!-- Latest JQuery Library -->
   <!-- jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. -->
-  <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <!-- Library dealing with the job titles typing -->
   <!-- <script src="static/lib/typed/typed.min.js"></script> -->
   <!-- Wow library, to make elements appear with fadeInUp animation as we scroll -->
-  <!-- <script src="static/lib/wow/wow.min.js"></script> -->
+  <script src="static/lib/wow/wow.min.js"></script>
   <!-- More libraries, keeping them to not break any functionality -->
-  <!-- <script src="static/lib/easing/easing.min.js"></script> -->
-  <!-- <script src="static/lib/waypoints/waypoints.min.js"></script> -->
+  <script src="static/lib/easing/easing.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
   <!-- <script src="static/lib/counterup/counterup.min.js"></script> -->
   <!-- <script src="static/lib/owlcarousel/owl.carousel.min.js"></script> -->
   <!-- <script src="static/lib/isotope/isotope.pkgd.min.js"></script> -->
   <!-- <script src="static/lib/lightbox/js/lightbox.min.js"></script> -->
 
   <!-- ProMan template Javascript -->
-  <!-- <script src="static/js/main.js"></script> -->
+  <script src="static/js/main.js"></script>
 
 </body>
 </html>
