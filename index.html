@@ -44,6 +44,20 @@
 
   <!-- AdBlock prevents my website to show properly so, trying to prevent that -->
   <script src="static/js/prebid-ads.js"></script>
+  <style>
+    #fallbackImage.show {
+        display: initial;
+        z-index: 100000;
+        position: absolute;
+        left: 20%;
+        top: 5%;
+        width:60%;
+    }
+
+    #fallbackImage.hide {
+      display: none;
+    }
+  </style>
 </head>
 
 
@@ -51,9 +65,6 @@
   <!-- "data-bs-spy", "data-bs-target" and "data-bs-offset" are so that the right navbar button highlights depending on the active section of the website I'm in -->
   <!-- See the documentation about Scrollspy -->
 <body id="home-body" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-
-  <!-- Only showing if AdBlock detected -->
-  <img src="static/assets/images/How-To-Disable-Your-AdBlocker-Temporarily-Or-For-A-Specific-Site.webp" id="fallbackImage" class="hide" />
 
   <!-- Loading Spinner Start -->
   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -97,6 +108,8 @@
   </nav>
   <!-- Navbar End -->
 
+  <!-- Only showing if AdBlock detected -->
+  <img src="static/assets/images/How-To-Disable-Your-AdBlocker-Temporarily-Or-For-A-Specific-Site.webp" id="fallbackImage" class="hide" />
 
   <!-- Home Main Banner - Start -->
   <div class="container-fluid bg-light my-6 mt-0" id="home">
