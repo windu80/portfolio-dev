@@ -41,25 +41,7 @@
   <!-- My Own CSS Stylesheet -->
   <!-- If your site already has style.css?v=1.0, if you make some changes and change it to style.css?v=1.1, this will force the browser to re-download the file and overwrite the old one in the browser’s cache -->
   <link rel="stylesheet" href="static/css/styles.css?v=1.1">
-
-  <!-- AdBlock prevents my website to show properly so, trying to prevent that -->
-  <script src="static/js/prebid-ads.js"></script>
-  <style>
-    #fallbackImage.show {
-        display: initial;
-        z-index: 100000;
-        position: absolute;
-        left: 20%;
-        top: 5%;
-        width:60%;
-    }
-
-    #fallbackImage.hide {
-      display: none;
-    }
-  </style>
 </head>
-
 
 
   <!-- "data-bs-spy", "data-bs-target" and "data-bs-offset" are so that the right navbar button highlights depending on the active section of the website I'm in -->
@@ -108,8 +90,26 @@
   </nav>
   <!-- Navbar End -->
 
-  <!-- Only showing if AdBlock detected -->
-  <img src="static/assets/images/How-To-Disable-Your-AdBlocker-Temporarily-Or-For-A-Specific-Site.webp" id="fallbackImage" class="hide" />
+
+  <!-- AdBlock Detector - Start -->
+  <div class="ad-block">
+    <div id="detect"></div>
+    <div class="wrapper">
+      <div class="content">
+        <div class="warn-icon">
+          <span class="icon"><i class="fas fa-exclamation"></i></span>
+        </div>
+        <h2>AdBlock Detected!</h2>
+        <p>Please disable adblock to use our website.</p>
+        <div class="btn">
+          <div class="bg-layer"></div>
+          <button>Okay, I will Whitelist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- AdBlock Detector - End -->
+
 
   <!-- Home Main Banner - Start -->
   <div class="container-fluid bg-light my-6 mt-0" id="home">
@@ -596,15 +596,22 @@
 
 
   <!-- JavaScript Libraries -->
-  <!-- Trying to prevent AdBlock from screwing up my websites -->
+  <!-- AdBlock Detector -->
   <script>
-    function showFallbackImage() {
-    document.getElementById("fallbackImage").className = "show";
+    const detect = document.querySelector("#detect");
+    const wrapper = document.querySelector(".ad-block .wrapper");
+    const button = wrapper.querySelector(".ad-block button");
+    let adClasses = ["ad", "ads", "adsbox", "doubleclick", "ad-placement", "ad-placeholder", "adbadge", "BannerAd"];
+    for(let item of adClasses){
+      detect.classList.add(item);
     }
-    if( window.canRunAds === undefined ){
-      // adblocker detected, show fallback
-      showFallbackImage();
+    let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+    if(!wrapper.classList.contains("show")){
+      getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
     }
+    button.addEventListener("click", ()=>{
+      wrapper.classList.remove("show");
+    });
   </script>
   <!-- Bootstrap 5.2 JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
